@@ -36,5 +36,5 @@ clean:
 	rm -rf $(OUTPUT_DIR)
 
 # Serve target to start a local HTTP server
-serve:
+serve: all
 	python3 -m http.server --directory $(OUTPUT_DIR)
