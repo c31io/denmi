@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<h1 id="vector-space">Vector space</h1>
+<p>A module over a field.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axiom</th>
+<th>Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Additive associativity</td>
+<td><span
+class="math inline"><strong>u</strong> + (<strong>v</strong> + <strong>w</strong>) = (<strong>u</strong> + <strong>v</strong>) + <strong>w</strong></span></td>
+</tr>
+<tr class="even">
+<td>Additive commutativity</td>
+<td><span
+class="math inline"><strong>u</strong> + <strong>v</strong> = <strong>v</strong> + <strong>u</strong></span></td>
+</tr>
+<tr class="odd">
+<td>Additive identity</td>
+<td><span
+class="math inline">∃<strong>0</strong> ∈ <em>V</em>, ∀<strong>v</strong> ∈ <em>V</em>, <strong>v</strong> + <strong>0</strong> = <strong>v</strong></span></td>
+</tr>
+<tr class="even">
+<td>Additive inverse</td>
+<td><span
+class="math inline">∀<strong>v</strong> ∈ <em>V</em>, ∃−<strong>v</strong> ∈ <em>V</em>, <strong>v</strong> + (−<strong>v</strong>) = <strong>0</strong></span></td>
+</tr>
+<tr class="odd">
+<td>Multiplicative compatibility</td>
+<td><span
+class="math inline"><em>a</em>(<em>b</em><strong>v</strong>) = (<em>a</em><em>b</em>)<strong>v</strong></span></td>
+</tr>
+<tr class="even">
+<td>Multiplicative identity</td>
+<td><span
+class="math inline">1<strong>v</strong> = <strong>v</strong></span></td>
+</tr>
+<tr class="odd">
+<td>Scalar-vector-vector distributivity</td>
+<td><span
+class="math inline"><em>a</em>(<strong>u</strong> + <strong>v</strong>) = <em>a</em><strong>u</strong> + <em>a</em><strong>v</strong></span></td>
+</tr>
+<tr class="even">
+<td>Scalar-scalar-vector distributivity</td>
+<td><span
+class="math inline">(<em>a</em> + <em>b</em>)<strong>v</strong> = <em>a</em><strong>v</strong> + <em>b</em><strong>v</strong></span></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
