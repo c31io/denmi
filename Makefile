@@ -7,7 +7,8 @@ PANDOC_FLAGS := \
 		--standalone \
 		--css "/style.css" \
     --metadata title="" \
-    --metadata pagetitle="denmi"
+    --metadata pagetitle="denmi" \
+		--from markdown+latex_macros
 
 # Find all Markdown files in the source directory
 SOURCES := $(shell find $(SOURCE_DIR) -name "*.md")
