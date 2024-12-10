@@ -19,6 +19,7 @@
       {
         devShells.default = pkgs.mkShell { packages = [
           pkgs.bashInteractive
+          pkgs.busybox
           pkgs.pandoc
         ]; };
       }

@@ -38,4 +38,5 @@ clean:
 
 # Serve target to start a local HTTP server
 serve: all
-	python3 -m http.server --directory $(OUTPUT_DIR)
+	xdg-open http://localhost:8888 && \
+	busybox httpd -fp 8888 -h web
