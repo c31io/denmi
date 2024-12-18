@@ -2,7 +2,7 @@
 
 A module over a field.
 
-## Properties
+## Definition
 
 \newcommand{\u}{\mathbf u}
 \newcommand{\v}{\mathbf v}
