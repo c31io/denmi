@@ -1,8 +1,12 @@
 # denmi
 
-[English](./en/index.md)
+A very dense book serves as a quick review over some subjects.
 
-[中文](./zh/index.md)
+---
+
+[🏴󠁧󠁢󠁥󠁮󠁧󠁿 󠁧󠁢󠁥󠁮󠁧󠁿English](./en/index.md)
+
+[🇨🇳 中文](./zh/index.md)
 
 ---
 
