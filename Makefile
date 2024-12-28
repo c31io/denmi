@@ -4,11 +4,12 @@ OUTPUT_DIR := web
 STYLE_SRC := style/style.css
 STYLE_DEST := $(OUTPUT_DIR)/style.css
 PANDOC_FLAGS := \
-		--standalone \
-		--css "/style.css" \
-    --metadata title="" \
-    --metadata pagetitle="denmi" \
-		--from markdown+latex_macros
+	--standalone \
+	--css "/style.css" \
+	--metadata title="" \
+	--metadata pagetitle="denmi" \
+	--from markdown+latex_macros \
+	--mathjax
 
 # Find all Markdown files in the source directory
 SOURCES := $(shell find $(SOURCE_DIR) -name "*.md")
