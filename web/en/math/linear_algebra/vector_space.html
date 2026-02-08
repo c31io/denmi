@@ -20,13 +20,16 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/style.css" />
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
 </head>
 <body>
 <h1 id="vector-space">Vector space</h1>
-<p>A module over a field.</p>
+<p>A module over a <a href="../real_analysis/field.html">field</a>.</p>
 <h2 id="definition">Definition</h2>
 <table>
 <thead>
@@ -38,43 +41,42 @@
 <tbody>
 <tr class="odd">
 <td>Additive associativity</td>
-<td><span
-class="math inline"><strong>u</strong> + (<strong>v</strong> + <strong>w</strong>) = (<strong>u</strong> + <strong>v</strong>) + <strong>w</strong></span></td>
+<td><span class="math inline">\(\mathbf u+(\mathbf v+\mathbf w)=(\mathbf
+u+\mathbf v)+\mathbf w\)</span></td>
 </tr>
 <tr class="even">
 <td>Additive commutativity</td>
-<td><span
-class="math inline"><strong>u</strong> + <strong>v</strong> = <strong>v</strong> + <strong>u</strong></span></td>
+<td><span class="math inline">\(\mathbf u+\mathbf v=\mathbf v+\mathbf
+u\)</span></td>
 </tr>
 <tr class="odd">
 <td>Additive identity</td>
-<td><span
-class="math inline">∃<strong>0</strong> ∈ <em>V</em>, ∀<strong>v</strong> ∈ <em>V</em>, <strong>v</strong> + <strong>0</strong> = <strong>v</strong></span></td>
+<td><span class="math inline">\(\exists\mathbf 0\in V,\forall\mathbf
+v\in V,\mathbf v+\mathbf 0=\mathbf v\)</span></td>
 </tr>
 <tr class="even">
 <td>Additive inverse</td>
-<td><span
-class="math inline">∀<strong>v</strong> ∈ <em>V</em>, ∃−<strong>v</strong> ∈ <em>V</em>, <strong>v</strong> + (−<strong>v</strong>) = <strong>0</strong></span></td>
+<td><span class="math inline">\(\forall\mathbf v\in V,\exists-\mathbf
+v\in V,\mathbf v+(-\mathbf v)=\mathbf 0\)</span></td>
 </tr>
 <tr class="odd">
 <td>Multiplicative compatibility</td>
-<td><span
-class="math inline"><em>a</em>(<em>b</em><strong>v</strong>) = (<em>a</em><em>b</em>)<strong>v</strong></span></td>
+<td><span class="math inline">\(a(b\mathbf v)=(ab)\mathbf
+v\)</span></td>
 </tr>
 <tr class="even">
 <td>Multiplicative identity</td>
-<td><span
-class="math inline">1<strong>v</strong> = <strong>v</strong></span></td>
+<td><span class="math inline">\(1\mathbf v=\mathbf v\)</span></td>
 </tr>
 <tr class="odd">
 <td>Distributivity of vector addition</td>
-<td><span
-class="math inline"><em>a</em>(<strong>u</strong> + <strong>v</strong>) = <em>a</em><strong>u</strong> + <em>a</em><strong>v</strong></span></td>
+<td><span class="math inline">\(a(\mathbf u+\mathbf v)=a\mathbf
+u+a\mathbf v\)</span></td>
 </tr>
 <tr class="even">
 <td>Distributivity of field addition</td>
-<td><span
-class="math inline">(<em>a</em> + <em>b</em>)<strong>v</strong> = <em>a</em><strong>v</strong> + <em>b</em><strong>v</strong></span></td>
+<td><span class="math inline">\((a+b)\mathbf v=a\mathbf v+b\mathbf
+v\)</span></td>
 </tr>
 </tbody>
 </table>
