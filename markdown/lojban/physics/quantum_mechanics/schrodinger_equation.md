@@ -1,4 +1,4 @@
-# .schrodinger_equation
+# .sxrodingraky
 
 ## .time-independent
 

@@ -1,4 +1,4 @@
-# .uikipesi
+# .anglixka
 
 [.matma.](../math/index.md)
 
