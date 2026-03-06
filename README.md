@@ -4,8 +4,6 @@ A very dense book serves as a quick review over some subjects.
 
 [Click here to visit the website](https://denmi.c31.io)
 
-English-centric, might switch to Lojban someday.
-
 ## Contribute
 
 Btw, I use [direnv](https://github.com/direnv/direnv) with [flakes](https://wiki.nixos.org/wiki/Flakes) for environment setup.
