@@ -22,12 +22,23 @@
     }
   </style>
   <link rel="stylesheet" href="/style.css" />
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
 </head>
 <body>
-<h1 id="group-theory">Group theory</h1>
-<p><a href="./group.html">Group</a> <a
-href="./subgroup.html">Subgroup</a> <a href="./cyclic_group.html">Cyclic
-group</a> <a href="./homomorphism.html">Homomorphism</a> <a
-href="./coset.html">Coset</a></p>
+<h1 id="同态">同态</h1>
+<p><span class="math inline">\(\phi: G \to H\)</span> 保持运算：<span
+class="math inline">\(\phi(ab) = \phi(a)\phi(b)\)</span>。</p>
+<ul>
+<li>核：<span class="math inline">\(\ker\phi = \{g \mid
+\phi(g)=e\}\)</span></li>
+<li>像：<span class="math inline">\(\operatorname{im}\phi =
+\phi(G)\)</span></li>
+</ul>
+<h2 id="同构定理">同构定理</h2>
+<p><span class="math inline">\(G/\ker\phi \cong
+\operatorname{im}\phi\)</span></p>
 </body>
 </html>
