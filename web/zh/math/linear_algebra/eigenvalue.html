@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="特征值与特征向量">特征值与特征向量</h1>
+<h2 id="定义">定义</h2>
+<p><span class="math display">\[A\mathbf{v} = \lambda
+\mathbf{v}\]</span></p>
+<ul>
+<li><span class="math inline">\(\lambda\)</span>：特征值</li>
+<li><span class="math inline">\(\mathbf{v} \neq
+\mathbf{0}\)</span>：特征向量</li>
+</ul>
+<h2 id="特征多项式">特征多项式</h2>
+<p><span class="math display">\[p(\lambda) = \det(A - \lambda
+I)\]</span></p>
+<p>根 = 特征值（包括复数）。</p>
+<h2 id="对角化">对角化</h2>
+<p><span class="math display">\[A = PDP^{-1}\]</span></p>
+<ul>
+<li><span class="math inline">\(D\)</span>：特征值对角矩阵</li>
+<li><span class="math inline">\(P\)</span>：特征向量矩阵</li>
+</ul>
+<p><strong>条件：</strong> <span class="math inline">\(n\)</span>
+个线性无关特征向量。</p>
+<h2 id="谱定理">谱定理</h2>
+<p><span class="math display">\[A = Q\Lambda Q^T\]</span></p>
+<ul>
+<li><span class="math inline">\(Q\)</span>：正交特征向量矩阵</li>
+<li><span class="math inline">\(\Lambda\)</span>：特征值对角矩阵</li>
+</ul>
+<h2 id="cayley-hamilton">Cayley-Hamilton</h2>
+<p><span class="math display">\[p_A(A) = 0\]</span></p>
+<p>矩阵满足其特征多项式。</p>
+<h2 id="最小多项式">最小多项式</h2>
+<p>次数最小的单多项式 <span class="math inline">\(m(\lambda)\)</span>
+满足 <span class="math inline">\(m(A)=0\)</span>。</p>
+<p>整除特征多项式，根相同。</p>
+</body>
+</html>

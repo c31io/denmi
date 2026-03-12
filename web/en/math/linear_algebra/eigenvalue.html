@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="eigenvalue-eigenvector">Eigenvalue &amp; Eigenvector</h1>
+<h2 id="definition">Definition</h2>
+<p><span class="math display">\[A\mathbf{v} = \lambda
+\mathbf{v}\]</span></p>
+<ul>
+<li><span class="math inline">\(\lambda\)</span>: eigenvalue</li>
+<li><span class="math inline">\(\mathbf{v} \neq \mathbf{0}\)</span>:
+eigenvector</li>
+</ul>
+<h2 id="characteristic-polynomial">Characteristic Polynomial</h2>
+<p><span class="math display">\[p(\lambda) = \det(A - \lambda
+I)\]</span></p>
+<p>Roots = eigenvalues (including complex).</p>
+<h2 id="diagonalization">Diagonalization</h2>
+<p><span class="math display">\[A = PDP^{-1}\]</span></p>
+<ul>
+<li><span class="math inline">\(D\)</span>: diagonal of eigenvalues</li>
+<li><span class="math inline">\(P\)</span>: matrix of eigenvectors</li>
+</ul>
+<p><strong>Condition:</strong> <span class="math inline">\(n\)</span>
+linearly independent eigenvectors.</p>
+<h2 id="spectral-theorem">Spectral Theorem</h2>
+<p><span class="math display">\[A = Q\Lambda Q^T\]</span></p>
+<ul>
+<li><span class="math inline">\(Q\)</span>: orthogonal matrix of
+eigenvectors</li>
+<li><span class="math inline">\(\Lambda\)</span>: diagonal eigenvalue
+matrix</li>
+</ul>
+<h2 id="cayley-hamilton">Cayley-Hamilton</h2>
+<p><span class="math display">\[p_A(A) = 0\]</span></p>
+<p>Matrix satisfies its own characteristic polynomial.</p>
+<h2 id="minimal-polynomial">Minimal Polynomial</h2>
+<p>Smallest degree monic <span class="math inline">\(m(\lambda)\)</span>
+with <span class="math inline">\(m(A)=0\)</span>.</p>
+<p>Divides characteristic polynomial, shares roots.</p>
+</body>
+</html>

@@ -9,7 +9,7 @@ PANDOC_FLAGS := \
 	--metadata title="" \
 	--metadata pagetitle="denmi" \
 	--from markdown+latex_macros \
-	--mathjax
+	--mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js
 
 # Find all Markdown files in the source directory
 SOURCES := $(shell find $(SOURCE_DIR) -name "*.md")
