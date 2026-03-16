@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="张量">张量</h1>
+<h2 id="定义">定义</h2>
+<p>张量是多线性映射： <span class="math display">\[T: V^* \times \cdots
+\times V^* \times V \times \cdots \times V \to \mathbb{R}\]</span></p>
+<ul>
+<li><span class="math inline">\((p,q)\)</span> 张量：<span
+class="math inline">\(p\)</span> 个逆变指标，<span
+class="math inline">\(q\)</span> 个协变指标</li>
+<li>秩：<span class="math inline">\(p + q\)</span></li>
+</ul>
+<h2 id="张量积">张量积</h2>
+<p><span class="math display">\[(T \otimes S)_{i_1 \ldots i_p j_1 \ldots
+j_q}^{k_1 \ldots k_r} = T_{i_1 \ldots i_p}^{k_1 \ldots k_r} S_{j_1
+\ldots j_q}^{k_{r+1} \ldots k_{r+s}}\]</span></p>
+<h2 id="缩并">缩并</h2>
+<p>用度规 <span class="math inline">\(g_{\mu\nu}\)</span> 升降指标：
+<span class="math display">\[T^\mu_{\ \nu} = g^{\mu\alpha}
+T_{\alpha\nu}\]</span></p>
+<p>重复指标求和（爱因斯坦约定）。</p>
+<h2 id="分量">分量</h2>
+<p><span class="math display">\[T^{i_1 \ldots i_p}_{j_1 \ldots
+j_q}\]</span></p>
+<p>变换律： <span class="math display">\[T&#39;^{i_1 \ldots i_p}_{j_1
+\ldots j_q} = \frac{\partial x&#39;^{i_1}}{\partial x^{k_1}} \cdots
+\frac{\partial x^{l_q}}{\partial x&#39;^{j_q}} T^{k_1 \ldots k_p}_{l_1
+\ldots l_q}\]</span></p>
+<h2 id="对称性">对称性</h2>
+<ul>
+<li>对称：<span class="math inline">\(T_{ij} = T_{ji}\)</span></li>
+<li>反对称：<span class="math inline">\(T_{ij} = -T_{ji}\)</span></li>
+<li>反对称张量：<span
+class="math inline">\(\varepsilon^{\mu\nu\rho\sigma}\)</span>（列维-
+Civita）</li>
+</ul>
+</body>
+</html>
