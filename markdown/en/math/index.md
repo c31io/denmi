@@ -4,4 +4,6 @@
 
 [Group theory](./group_theory/index.md)
 
+[Real analysis](./real_analysis/index.md)
+
 [Tensor](./tensor/tensor.md)

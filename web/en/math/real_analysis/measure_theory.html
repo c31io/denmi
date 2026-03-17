@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="measure-theory">Measure Theory</h1>
+<h2 id="definition">Definition</h2>
+<p>A measure <span class="math inline">\(\mu\)</span> on <span
+class="math inline">\(X\)</span> is a function <span
+class="math inline">\(\mu: \Sigma \to [0,\infty]\)</span> where <span
+class="math inline">\(\Sigma\)</span> is a <span
+class="math inline">\(\sigma\)</span>-algebra, satisfying: - <span
+class="math inline">\(\mu(\emptyset) = 0\)</span> - Countable
+additivity: <span class="math inline">\(\mu(\bigcup_i E_i) = \sum_i
+\mu(E_i)\)</span> for disjoint <span
+class="math inline">\(E_i\)</span></p>
+<h2 id="lebesgue-measure">Lebesgue Measure</h2>
+<p>On <span class="math inline">\(\mathbb{R}^n\)</span>, Lebesgue
+measure <span class="math inline">\(\lambda\)</span> satisfies: -
+Translation invariance: <span class="math inline">\(\lambda(E + x) =
+\lambda(E)\)</span> - Countable additivity - <span
+class="math inline">\(\lambda([0,1]^n) = 1\)</span></p>
+<h2 id="measurable-functions">Measurable Functions</h2>
+<p><span class="math inline">\(f: X \to \overline{\mathbb{R}}\)</span>
+is measurable if <span class="math inline">\(f^{-1}((a,\infty]) \in
+\Sigma\)</span> for all <span class="math inline">\(a \in
+\mathbb{R}\)</span>.</p>
+<h2 id="integration">Integration</h2>
+<p><span class="math display">\[\int_X f \, d\mu = \int_0^\infty
+\mu(\{x: f(x) &gt; t\}) \, dt\]</span></p>
+<h2 id="monotone-convergence-theorem-mct">Monotone Convergence Theorem
+(MCT)</h2>
+<p>If <span class="math inline">\(0 \leq f_n \uparrow f\)</span>
+pointwise, then: <span class="math display">\[\lim \int f_n \, d\mu =
+\int f \, d\mu\]</span></p>
+<h2 id="dominated-convergence-theorem-dct">Dominated Convergence Theorem
+(DCT)</h2>
+<p>If <span class="math inline">\(f_n \to f\)</span> a.e. and <span
+class="math inline">\(|f_n| \leq g\)</span> with <span
+class="math inline">\(g \in L^1\)</span>, then: <span
+class="math display">\[\lim \int f_n \, d\mu = \int f \,
+d\mu\]</span></p>
+<h2 id="lp-spaces"><span class="math inline">\(L^p\)</span> Spaces</h2>
+<p><span class="math display">\[\|f\|_p = \left(\int |f|^p \,
+d\mu\right)^{1/p}, \quad 1 \leq p &lt; \infty\]</span></p>
+<ul>
+<li>Hölder: <span class="math inline">\(\|fg\|_1 \leq \|f\|_p
+\|g\|_q\)</span> where <span class="math inline">\(\frac{1}{p} +
+\frac{1}{q} = 1\)</span></li>
+<li>Minkowski: <span class="math inline">\(\|f + g\|_p \leq \|f\|_p +
+\|g\|_p\)</span></li>
+</ul>
+<h2 id="product-measure">Product Measure</h2>
+<p><span class="math inline">\((X \times Y, \Sigma \otimes \tau, \mu
+\times \nu)\)</span> with: <span class="math display">\[(\mu \times
+\nu)(A \times B) = \mu(A)\nu(B)\]</span></p>
+<p>Fubini’s Theorem: <span class="math inline">\(\int_{X \times Y} f \,
+d(\mu \times \nu) = \int_X \int_Y f \, d\nu \, d\mu\)</span></p>
+</body>
+</html>

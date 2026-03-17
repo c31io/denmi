@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="测度论">测度论</h1>
+<h2 id="定义">定义</h2>
+<p>设 <span class="math inline">\(X\)</span> 上的测度 <span
+class="math inline">\(\mu\)</span> 是函数 <span
+class="math inline">\(\mu: \Sigma \to [0,\infty]\)</span>，其中 <span
+class="math inline">\(\Sigma\)</span> 是 <span
+class="math inline">\(\sigma\)</span>-代数，满足： - <span
+class="math inline">\(\mu(\emptyset) = 0\)</span> - 可数可加性：<span
+class="math inline">\(\mu(\bigcup_i E_i) = \sum_i
+\mu(E_i)\)</span>，其中 <span class="math inline">\(E_i\)</span>
+两两不相交</p>
+<h2 id="lebesgue-测度">Lebesgue 测度</h2>
+<p>在 <span class="math inline">\(\mathbb{R}^n\)</span> 上，Lebesgue
+测度 <span class="math inline">\(\lambda\)</span> 满足： -
+平移不变性：<span class="math inline">\(\lambda(E + x) =
+\lambda(E)\)</span> - 可数可加性 - <span
+class="math inline">\(\lambda([0,1]^n) = 1\)</span></p>
+<h2 id="可测函数">可测函数</h2>
+<p><span class="math inline">\(f: X \to \overline{\mathbb{R}}\)</span>
+是可测的，若 <span class="math inline">\(f^{-1}((a,\infty]) \in
+\Sigma\)</span> 对所有 <span class="math inline">\(a \in
+\mathbb{R}\)</span> 成立。</p>
+<h2 id="积分">积分</h2>
+<p><span class="math display">\[\int_X f \, d\mu = \int_0^\infty
+\mu(\{x: f(x) &gt; t\}) \, dt\]</span></p>
+<h2 id="单调收敛定理mct">单调收敛定理（MCT）</h2>
+<p>若 <span class="math inline">\(0 \leq f_n \uparrow f\)</span>
+逐点成立，则： <span class="math display">\[\lim \int f_n \, d\mu = \int
+f \, d\mu\]</span></p>
+<h2 id="控制收敛定理dct">控制收敛定理（DCT）</h2>
+<p>若 <span class="math inline">\(f_n \to f\)</span> 几乎处处且 <span
+class="math inline">\(|f_n| \leq g\)</span>，其中 <span
+class="math inline">\(g \in L^1\)</span>，则： <span
+class="math display">\[\lim \int f_n \, d\mu = \int f \,
+d\mu\]</span></p>
+<h2 id="lp-空间"><span class="math inline">\(L^p\)</span> 空间</h2>
+<p><span class="math display">\[\|f\|_p = \left(\int |f|^p \,
+d\mu\right)^{1/p}, \quad 1 \leq p &lt; \infty\]</span></p>
+<ul>
+<li>Hölder 不等式：<span class="math inline">\(\|fg\|_1 \leq \|f\|_p
+\|g\|_q\)</span>，其中 <span class="math inline">\(\frac{1}{p} +
+\frac{1}{q} = 1\)</span></li>
+<li>Minkowski 不等式：<span class="math inline">\(\|f + g\|_p \leq
+\|f\|_p + \|g\|_p\)</span></li>
+</ul>
+<h2 id="乘积测度">乘积测度</h2>
+<p><span class="math inline">\((X \times Y, \Sigma \otimes \tau, \mu
+\times \nu)\)</span>，满足： <span class="math display">\[(\mu \times
+\nu)(A \times B) = \mu(A)\nu(B)\]</span></p>
+<p>Fubini 定理：<span class="math inline">\(\int_{X \times Y} f \, d(\mu
+\times \nu) = \int_X \int_Y f \, d\nu \, d\mu\)</span></p>
+</body>
+</html>
