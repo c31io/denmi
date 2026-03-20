@@ -10,3 +10,4 @@
 - [流形](math/manifold.md)
 - [拓扑学](math/topology.md)
 - [概率论](math/probability.md)
+- [伽罗瓦理论](math/galois_theory.md)

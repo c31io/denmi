@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="伽罗瓦理论">伽罗瓦理论</h1>
+<h2 id="域扩张">域扩张</h2>
+<p><span class="math inline">\(E/F\)</span>
+为<strong>域扩张</strong>，若 <span class="math inline">\(F \subseteq
+E\)</span>。次数：<span class="math inline">\([E:F] = \dim_F
+E\)</span>。</p>
+<h2 id="代数元">代数元</h2>
+<p><span class="math inline">\(\alpha\)</span> 在 <span
+class="math inline">\(F\)</span> 上<strong>代数</strong>，若 <span
+class="math inline">\(\exists f \in F[x], f(\alpha) =
+0\)</span>。最小多项式：<span class="math inline">\(\mathrm{min}(F,
+\alpha)\)</span>。</p>
+<h2 id="分裂域">分裂域</h2>
+<p><span class="math inline">\(L\)</span> 为 <span
+class="math inline">\(f \in F[x]\)</span> 的<strong>分裂域</strong>，若
+<span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(L\)</span> 中分裂且 <span class="math inline">\(L
+= F(\{\text{根}\})\)</span>。</p>
+<h2 id="galois-扩张">Galois 扩张</h2>
+<p><span class="math inline">\(E/F\)</span> 为 <strong>Galois
+扩张</strong>，若正规且可分。等价：<span class="math inline">\(|{\rm
+Aut}_F(E)| = [E:F]\)</span>。</p>
+<h2 id="galois-群">Galois 群</h2>
+<p><span class="math display">\[{\rm Gal}(E/F) = \{\sigma \in {\rm
+Aut}(E) \mid \sigma|_F = \mathrm{id}\}\]</span></p>
+<h2 id="galois-理论基本定理">Galois 理论基本定理</h2>
+<p>对于 Galois 扩张 <span class="math inline">\(E/F\)</span>，群 <span
+class="math inline">\(G = {\rm Gal}(E/F)\)</span>：</p>
+<table>
+<thead>
+<tr class="header">
+<th>子扩张 <span class="math inline">\(F \subseteq K \subseteq
+E\)</span></th>
+<th>子群 <span class="math inline">\(H \leq G\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\([K:F] = [G:H]\)</span></td>
+<td><span class="math inline">\(|H| = [E:K]\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(K/F\)</span> 正规 <span
+class="math inline">\(\iff\)</span> <span class="math inline">\(H
+\trianglelefteq G\)</span></td>
+<td><span class="math inline">\({\rm Gal}(K/F) \cong G/H\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="根式可解性">根式可解性</h2>
+<p><span class="math inline">\(f \in F[x]\)</span>
+<strong>根式可解</strong>当且仅当其 Galois 群为可解群。</p>
+<h2 id="二次三次四次">二次/三次/四次</h2>
+<ul>
+<li>二次：始终可解</li>
+<li>三次：Galois 群 <span class="math inline">\(\in
+S_3\)</span>，可解</li>
+<li>四次：Galois 群 <span class="math inline">\(\in
+S_4\)</span>，可解</li>
+<li>五次：部分不可解（<span class="math inline">\(S_5\)</span>
+无正规子群列）</li>
+</ul>
+</body>
+</html>

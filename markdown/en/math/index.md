@@ -10,3 +10,4 @@
 - [Manifold](math/manifold.md)
 - [Topology](math/topology.md)
 - [Probability](math/probability.md)
+- [Galois Theory](math/galois_theory.md)

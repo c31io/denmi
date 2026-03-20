@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="galois-theory">Galois Theory</h1>
+<h2 id="field-extension">Field Extension</h2>
+<p><span class="math inline">\(E/F\)</span> is a <strong>field
+extension</strong> if <span class="math inline">\(F \subseteq
+E\)</span>. Degree: <span class="math inline">\([E:F] = \dim_F
+E\)</span>.</p>
+<h2 id="algebraic-element">Algebraic Element</h2>
+<p><span class="math inline">\(\alpha\)</span> is
+<strong>algebraic</strong> over <span class="math inline">\(F\)</span>
+if <span class="math inline">\(\exists f \in F[x], f(\alpha) =
+0\)</span>. Minimal polynomial: <span
+class="math inline">\(\mathrm{min}(F, \alpha)\)</span>.</p>
+<h2 id="splitting-field">Splitting Field</h2>
+<p><span class="math inline">\(L\)</span> is a <strong>splitting
+field</strong> of <span class="math inline">\(f \in F[x]\)</span> if
+<span class="math inline">\(f\)</span> splits in <span
+class="math inline">\(L\)</span> and <span class="math inline">\(L =
+F(\{\text{roots of } f\})\)</span>.</p>
+<h2 id="galois-extension">Galois Extension</h2>
+<p><span class="math inline">\(E/F\)</span> is <strong>Galois</strong>
+if it is normal and separable. Equivalent: <span
+class="math inline">\(|{\rm Aut}_F(E)| = [E:F]\)</span>.</p>
+<h2 id="galois-group">Galois Group</h2>
+<p><span class="math display">\[{\rm Gal}(E/F) = \{\sigma \in {\rm
+Aut}(E) \mid \sigma|_F = \mathrm{id}\}\]</span></p>
+<h2 id="fundamental-theorem-of-galois-theory">Fundamental Theorem of
+Galois Theory</h2>
+<p>For Galois extension <span class="math inline">\(E/F\)</span> with
+group <span class="math inline">\(G = {\rm Gal}(E/F)\)</span>:</p>
+<table>
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subextensions <span class="math inline">\(F \subseteq K \subseteq
+E\)</span></th>
+<th>Subgroups <span class="math inline">\(H \leq G\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\([K:F] = [G:H]\)</span></td>
+<td><span class="math inline">\(|H| = [E:K]\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(K/F\)</span> normal <span
+class="math inline">\(\iff\)</span> <span class="math inline">\(H
+\trianglelefteq G\)</span></td>
+<td><span class="math inline">\({\rm Gal}(K/F) \cong G/H\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="solvability-by-radicals">Solvability by Radicals</h2>
+<p><span class="math inline">\(f \in F[x]\)</span> is <strong>solvable
+by radicals</strong> iff its Galois group is a solvable group.</p>
+<h2 id="quadraticcubicquartic">Quadratic/Cubic/Quartic</h2>
+<ul>
+<li>Quadratic: solvable always</li>
+<li>Cubic: Galois group <span class="math inline">\(\in S_3\)</span>,
+solvable</li>
+<li>Quartic: Galois group <span class="math inline">\(\in S_4\)</span>,
+solvable</li>
+<li>Quintic: some unsolvable (<span class="math inline">\(S_5\)</span>
+has no normal subgroup tower)</li>
+</ul>
+</body>
+</html>
