@@ -7,3 +7,4 @@
 [Real analysis](./real_analysis/index.md)
 
 [Tensor](./tensor/tensor.md)
+- [Manifold](math/manifold.md)

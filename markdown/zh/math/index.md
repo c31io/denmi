@@ -7,3 +7,4 @@
 [实分析](./real_analysis/index.md)
 
 [张量](./tensor/tensor.md)
+- [流形](math/manifold.md)
