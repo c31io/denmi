@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="范畴论">范畴论</h1>
+<h2 id="定义">定义</h2>
+<p><strong>范畴</strong> <span
+class="math inline">\(\mathcal{C}\)</span> 由以下组成： -
+<strong>对象</strong>：<span class="math inline">\(A, B, C,
+\ldots\)</span> - <strong>态射</strong>：<span class="math inline">\(f:
+A \to B\)</span>，<span class="math inline">\(\mathrm{Hom}(A,B)\)</span>
+- <strong>复合</strong>：<span class="math inline">\(g \circ
+f\)</span>（当 <span class="math inline">\(\mathrm{dom}(g) =
+\mathrm{cod}(f)\)</span>） - <strong>单位元</strong>：<span
+class="math inline">\(\mathrm{id}_A: A \to A\)</span></p>
+<p>满足结合律和单位元律。</p>
+<h2 id="函子">函子</h2>
+<p><span class="math inline">\(F: \mathcal{C} \to \mathcal{D}\)</span>：
+- 对象：<span class="math inline">\(F(A) \in \mathcal{D}\)</span> -
+态射：<span class="math inline">\(F(f: A \to B) \to F(A) \to
+F(B)\)</span> - 保持单位元和复合。</p>
+<h2 id="自然变换">自然变换</h2>
+<p><span class="math inline">\(\eta: F \Rightarrow G\)</span>： -
+对每个对象 <span class="math inline">\(A\)</span>：<span
+class="math inline">\(\eta_A: F(A) \to G(A)\)</span> - 对每个 <span
+class="math inline">\(f: A \to B\)</span>：图交换 <span
+class="math display">\[G(f) \circ \eta_A = \eta_B \circ
+F(f)\]</span></p>
+<h2 id="yoneda-引理">Yoneda 引理</h2>
+<p><span class="math display">\[{\rm Nat}(h^A, F) \cong F(A)\]</span>
+其中 <span class="math inline">\(h^A(X) = {\rm Hom}(A, X)\)</span>。</p>
+<h2 id="极限与余极限">极限与余极限</h2>
+<ul>
+<li><strong>极限</strong>：图表 <span class="math inline">\(D:
+\mathcal{J} \to \mathcal{C}\)</span> 的万有锥</li>
+<li><strong>余极限</strong>：图表的万有余锥</li>
+<li>积/余积：<span class="math inline">\(\prod_i A_i\)</span>，<span
+class="math inline">\(\coprod_i A_i\)</span>（<span
+class="math inline">\(\mathcal{J}\)</span> 离散）</li>
+<li>等化子/余等化子：<span class="math inline">\(\mathcal{J} = \cdot
+\rightrightarrows \cdot\)</span></li>
+</ul>
+<h2 id="伴随函子">伴随函子</h2>
+<p><span class="math inline">\(F \dashv G\)</span>（<span
+class="math inline">\(F\)</span> 左伴随 <span
+class="math inline">\(G\)</span>），若： <span
+class="math display">\[{\rm Hom}(F(A), B) \cong {\rm Hom}(A,
+G(B))\]</span> 关于 <span class="math inline">\(A, B\)</span> 自然。</p>
+<h2 id="幺半群">幺半群</h2>
+<p>三元组 <span class="math inline">\((T, \mu, \eta)\)</span>，其中
+<span class="math inline">\(T: \mathcal{C} \to
+\mathcal{C}\)</span>，<span class="math inline">\(\mu: T^2 \Rightarrow
+T\)</span>，<span class="math inline">\(\eta: \mathrm{id} \Rightarrow
+T\)</span>，满足结合律和单位元律。</p>
+</body>
+</html>

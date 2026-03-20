@@ -12,3 +12,4 @@
 - [Probability](math/probability.md)
 - [Galois Theory](math/galois_theory.md)
 - [Representation Theory](math/representation_theory.md)
+- [Category Theory](math/category_theory.md)
