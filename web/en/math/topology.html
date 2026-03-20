@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="topology">Topology</h1>
+<h2 id="definition">Definition</h2>
+<p>A <strong>topology</strong> <span class="math inline">\(\tau\)</span>
+on set <span class="math inline">\(X\)</span> is a collection of subsets
+satisfying: 1. <span class="math inline">\(\varnothing, X \in
+\tau\)</span> 2. Any union of members of <span
+class="math inline">\(\tau\)</span> is in <span
+class="math inline">\(\tau\)</span> 3. Finite intersection of members of
+<span class="math inline">\(\tau\)</span> is in <span
+class="math inline">\(\tau\)</span></p>
+<p><span class="math inline">\((X, \tau)\)</span> is a
+<strong>topological space</strong>.</p>
+<h2 id="basis">Basis</h2>
+<p>A <strong>basis</strong> <span
+class="math inline">\(\mathcal{B}\)</span> generates topology: <span
+class="math inline">\(U \in \tau \iff \forall x \in U, \exists B \in
+\mathcal{B}, x \in B \subseteq U\)</span>.</p>
+<h2 id="continuity">Continuity</h2>
+<p><span class="math inline">\(f: (X, \tau_X) \to (Y, \tau_Y)\)</span>
+is <strong>continuous</strong> if <span class="math inline">\(f^{-1}(V)
+\in \tau_X\)</span> for all <span class="math inline">\(V \in
+\tau_Y\)</span>.</p>
+<h2 id="homeomorphism">Homeomorphism</h2>
+<p><span class="math inline">\(f\)</span> is a
+<strong>homeomorphism</strong> if <span class="math inline">\(f\)</span>
+is bijective, continuous, and <span
+class="math inline">\(f^{-1}\)</span> is continuous. Written <span
+class="math inline">\(X \cong Y\)</span>.</p>
+<h2 id="separation-axioms">Separation Axioms</h2>
+<ul>
+<li><span class="math inline">\(T_0\)</span>: distinct points are
+topologically distinguishable</li>
+<li><span class="math inline">\(T_1\)</span>: singletons are closed</li>
+<li><span class="math inline">\(T_2\)</span> (Hausdorff): distinct
+points have disjoint neighborhoods</li>
+<li><span class="math inline">\(T_3\)</span>, <span
+class="math inline">\(T_4\)</span>: regular/normal spaces for separation
+of closed sets</li>
+</ul>
+<h2 id="compactness">Compactness</h2>
+<p><span class="math inline">\(X\)</span> is <strong>compact</strong> if
+every open cover has a finite subcover. Equivalent: every collection of
+closed sets with the finite intersection property has nonempty
+intersection.</p>
+<h2 id="connectedness">Connectedness</h2>
+<p><span class="math inline">\(X\)</span> is <strong>connected</strong>
+if it cannot be partitioned into two nonempty disjoint open sets.
+Equivalently, the only clopen sets are <span
+class="math inline">\(\varnothing\)</span> and <span
+class="math inline">\(X\)</span>.</p>
+<h2 id="quotient-topology">Quotient Topology</h2>
+<p>For equivalence relation <span class="math inline">\(\sim\)</span> on
+<span class="math inline">\(X\)</span>, the <strong>quotient
+topology</strong> on <span class="math inline">\(X/\sim\)</span>: <span
+class="math inline">\(U\)</span> is open iff <span
+class="math inline">\(\pi^{-1}(U)\)</span> is open in <span
+class="math inline">\(X\)</span>, where <span class="math inline">\(\pi:
+X \to X/\sim\)</span> is the projection.</p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="拓扑学">拓扑学</h1>
+<h2 id="定义">定义</h2>
+<p>集合 <span class="math inline">\(X\)</span> 上的<strong>拓扑</strong>
+<span class="math inline">\(\tau\)</span> 是满足以下条件的子集族： 1.
+<span class="math inline">\(\varnothing, X \in \tau\)</span> 2. 任意个
+<span class="math inline">\(\tau\)</span> 中成员的并仍在 <span
+class="math inline">\(\tau\)</span> 中 3. 有限个 <span
+class="math inline">\(\tau\)</span> 中成员的交仍在 <span
+class="math inline">\(\tau\)</span> 中</p>
+<p><span class="math inline">\((X, \tau)\)</span>
+称为<strong>拓扑空间</strong>。</p>
+<h2 id="基">基</h2>
+<p><strong>基</strong> <span class="math inline">\(\mathcal{B}\)</span>
+生成的拓扑：<span class="math inline">\(U \in \tau \iff \forall x \in U,
+\exists B \in \mathcal{B}, x \in B \subseteq U\)</span>。</p>
+<h2 id="连续映射">连续映射</h2>
+<p><span class="math inline">\(f: (X, \tau_X) \to (Y, \tau_Y)\)</span>
+<strong>连续</strong>，若 <span class="math inline">\(\forall V \in
+\tau_Y, f^{-1}(V) \in \tau_X\)</span>。</p>
+<h2 id="同胚">同胚</h2>
+<p><span class="math inline">\(f\)</span> 为<strong>同胚</strong>，若
+<span class="math inline">\(f\)</span> 双射、连续且 <span
+class="math inline">\(f^{-1}\)</span> 连续。记作 <span
+class="math inline">\(X \cong Y\)</span>。</p>
+<h2 id="分离公理">分离公理</h2>
+<ul>
+<li><span class="math inline">\(T_0\)</span>：不同点拓扑可辨</li>
+<li><span class="math inline">\(T_1\)</span>：单点集为闭集</li>
+<li><span class="math inline">\(T_2\)</span>（
+Hausdorff）：不同点有不相交邻域</li>
+<li><span class="math inline">\(T_3\)</span>, <span
+class="math inline">\(T_4\)</span>：正则/正规空间</li>
+</ul>
+<h2 id="紧性">紧性</h2>
+<p><span class="math inline">\(X\)</span>
+<strong>紧</strong>，若每个开覆盖有有限子覆盖。等价：每个具有有限交性质的闭集族之交非空。</p>
+<h2 id="连通性">连通性</h2>
+<p><span class="math inline">\(X\)</span>
+<strong>连通</strong>，若不能分成两个非空不相交开集。等价：唯一既开又闭的集合是
+<span class="math inline">\(\varnothing\)</span> 和 <span
+class="math inline">\(X\)</span>。</p>
+<h2 id="商拓扑">商拓扑</h2>
+<p>等价关系 <span class="math inline">\(\sim\)</span> 在 <span
+class="math inline">\(X\)</span> 上，商空间 <span
+class="math inline">\(X/\sim\)</span> 的<strong>商拓扑</strong>：<span
+class="math inline">\(U\)</span> 为开集当且仅当 <span
+class="math inline">\(\pi^{-1}(U)\)</span> 在 <span
+class="math inline">\(X\)</span> 中为开，其中 <span
+class="math inline">\(\pi: X \to X/\sim\)</span> 为投影。</p>
+</body>
+</html>
