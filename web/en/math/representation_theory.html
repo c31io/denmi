@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="representation-theory">Representation Theory</h1>
+<h2 id="definition">Definition</h2>
+<p>A <strong>representation</strong> of group <span
+class="math inline">\(G\)</span> on vector space <span
+class="math inline">\(V\)</span> is a homomorphism: <span
+class="math display">\[\rho: G \to GL(V)\]</span></p>
+<p><strong>Degree</strong>: <span class="math inline">\(\dim V\)</span>.
+<strong>Faithful</strong>: <span class="math inline">\(\rho\)</span>
+injective.</p>
+<h2 id="equivalent-representations">Equivalent Representations</h2>
+<p><span class="math inline">\(\rho_1 \sim \rho_2\)</span> if <span
+class="math inline">\(\exists T \in GL(V)\)</span> with <span
+class="math inline">\(\rho_2(g) = T^{-1}\rho_1(g)T\)</span>.</p>
+<h2 id="reducibility">Reducibility</h2>
+<p><span class="math inline">\(\rho\)</span> is
+<strong>irreducible</strong> if only <span
+class="math inline">\(G\)</span>-invariant subspaces are <span
+class="math inline">\(\{0\}\)</span> and <span
+class="math inline">\(V\)</span>. Otherwise <strong>reducible</strong>:
+- <strong>Completely reducible</strong>: <span class="math inline">\(V
+\cong W \oplus W&#39;\)</span> for irreducible subrepresentations -
+<strong>Direct sum</strong>: <span class="math inline">\(\rho \cong
+\bigoplus_i \rho_i\)</span></p>
+<h2 id="schurs-lemma">Schur’s Lemma</h2>
+<p>If <span class="math inline">\(\rho_1: G \to GL(V)\)</span>, <span
+class="math inline">\(\rho_2: G \to GL(W)\)</span> irreducible: - <span
+class="math inline">\(\mathrm{Hom}_G(V,W) = 0\)</span> if <span
+class="math inline">\(\rho_1 \not\sim \rho_2\)</span> - <span
+class="math inline">\(\mathrm{Hom}_G(V,V) = \mathbb{C} \cdot
+\mathrm{id}\)</span></p>
+<h2 id="character">Character</h2>
+<p><span class="math display">\[\chi_\rho(g) =
+\mathrm{tr}(\rho(g))\]</span></p>
+<ul>
+<li><span class="math inline">\(\chi\)</span> is constant on conjugacy
+classes</li>
+<li><span class="math inline">\(\langle \chi_1, \chi_2 \rangle =
+\frac{1}{|G|}\sum_{g \in G} \overline{\chi_1(g)}\chi_2(g)\)</span></li>
+</ul>
+<h2 id="orthogonality-relations">Orthogonality Relations</h2>
+<p>Irreducible characters form orthonormal basis of class functions.</p>
+<h2 id="maschkes-theorem">Maschke’s Theorem</h2>
+<p>Every finite group representation over <span
+class="math inline">\(\mathbb{C}\)</span> is completely reducible.</p>
+</body>
+</html>

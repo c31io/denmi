@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="表示理论">表示理论</h1>
+<h2 id="定义">定义</h2>
+<p>群 <span class="math inline">\(G\)</span> 在向量空间 <span
+class="math inline">\(V\)</span> 上的<strong>表示</strong>是同态： <span
+class="math display">\[\rho: G \to GL(V)\]</span></p>
+<p><strong>次数</strong>：<span class="math inline">\(\dim
+V\)</span>。<strong>忠实</strong>：<span
+class="math inline">\(\rho\)</span> 单射。</p>
+<h2 id="等价表示">等价表示</h2>
+<p><span class="math inline">\(\rho_1 \sim \rho_2\)</span> 若 <span
+class="math inline">\(\exists T \in GL(V)\)</span> 使 <span
+class="math inline">\(\rho_2(g) = T^{-1}\rho_1(g)T\)</span>。</p>
+<h2 id="可约性">可约性</h2>
+<p><span class="math inline">\(\rho\)</span>
+<strong>不可约</strong>，若唯一 <span class="math inline">\(G\)</span>
+不变子空间为 <span class="math inline">\(\{0\}\)</span> 和 <span
+class="math inline">\(V\)</span>。否则<strong>可约</strong>： -
+<strong>完全可约</strong>：<span class="math inline">\(V \cong W \oplus
+W&#39;\)</span> - <strong>直和</strong>：<span
+class="math inline">\(\rho \cong \bigoplus_i \rho_i\)</span></p>
+<h2 id="schur-引理">Schur 引理</h2>
+<p>若 <span class="math inline">\(\rho_1: G \to GL(V)\)</span>，<span
+class="math inline">\(\rho_2: G \to GL(W)\)</span> 不可约： - <span
+class="math inline">\(\mathrm{Hom}_G(V,W) = 0\)</span> 若 <span
+class="math inline">\(\rho_1 \not\sim \rho_2\)</span> - <span
+class="math inline">\(\mathrm{Hom}_G(V,V) = \mathbb{C} \cdot
+\mathrm{id}\)</span></p>
+<h2 id="特征标">特征标</h2>
+<p><span class="math display">\[\chi_\rho(g) =
+\mathrm{tr}(\rho(g))\]</span></p>
+<ul>
+<li><span class="math inline">\(\chi\)</span> 在共轭类上为常数</li>
+<li><span class="math inline">\(\langle \chi_1, \chi_2 \rangle =
+\frac{1}{|G|}\sum_{g \in G} \overline{\chi_1(g)}\chi_2(g)\)</span></li>
+</ul>
+<h2 id="正交关系">正交关系</h2>
+<p>不可约特征标构成类函数的正交基。</p>
+<h2 id="maschke-定理">Maschke 定理</h2>
+<p>域 <span class="math inline">\(\mathbb{C}\)</span>
+上有限群表示均为完全可约。</p>
+</body>
+</html>

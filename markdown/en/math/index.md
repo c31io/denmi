@@ -11,3 +11,4 @@
 - [Topology](math/topology.md)
 - [Probability](math/probability.md)
 - [Galois Theory](math/galois_theory.md)
+- [Representation Theory](math/representation_theory.md)
