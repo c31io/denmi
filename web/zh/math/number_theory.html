@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="解析数论">解析数论</h1>
+<h2 id="定义">定义</h2>
+<p>定义黎曼ζ函数 <span
+class="math inline">\(\zeta(s)=\sum_{n\ge1}n^{-s}\)</span>（<span
+class="math inline">\(\Re(s)&gt;1\)</span>）以及狄利克雷L函数 <span
+class="math inline">\(L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}\)</span>。</p>
+<h2 id="关键性质">关键性质</h2>
+<ul>
+<li>欧拉积：<span
+class="math inline">\(\zeta(s)=\prod_{p}(1-p^{-s})^{-1}\)</span>（<span
+class="math inline">\(\Re(s)&gt;1\)</span>）。</li>
+<li>可解析延拓至 <span class="math inline">\(s\neq1\)</span>，在 <span
+class="math inline">\(s=1\)</span> 处有单极点。</li>
+<li>函数方程：<span
+class="math inline">\(\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)=\xi(1-s)\)</span>。</li>
+<li>非平凡零点位于 <span
+class="math inline">\(0&lt;\Re(s)&lt;1\)</span>（黎曼猜想）。</li>
+<li>素数定理：<span class="math inline">\(\pi(x)\sim x/\log
+x\)</span>（<span class="math inline">\(x\to\infty\)</span>）。</li>
+</ul>
+<h2 id="主定理">主定理</h2>
+<p>（Riemann–von Mangoldt）显式公式 <span
+class="math display">\[\psi(x)=x-\sum_{\rho}\frac{x^{\rho}}{\rho}-\log(2\pi)\]</span>
+把切比雪夫函数 <span class="math inline">\(\psi(x)=\sum_{p^k\le x}\log
+p\)</span> 与 <span class="math inline">\(\zeta(s)\)</span> 的零点 <span
+class="math inline">\(\rho\)</span> 联系起来，从而推出素数定理。</p>
+</body>
+</html>

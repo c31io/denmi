@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="analytic-number-theory">Analytic Number Theory</h1>
+<h2 id="definition">Definition</h2>
+<p>Define the Riemann zeta function <span
+class="math inline">\(\zeta(s)=\sum_{n\ge1}n^{-s}\)</span> for <span
+class="math inline">\(\Re(s)&gt;1\)</span>, and Dirichlet L‑functions
+<span
+class="math inline">\(L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}\)</span>.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li>Euler product: <span
+class="math inline">\(\zeta(s)=\prod_{p}(1-p^{-s})^{-1}\)</span> for
+<span class="math inline">\(\Re(s)&gt;1\)</span>.</li>
+<li>Analytic continuation to <span class="math inline">\(s\neq1\)</span>
+with a simple pole at <span class="math inline">\(s=1\)</span>.</li>
+<li>Functional equation: <span
+class="math inline">\(\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)=\xi(1-s)\)</span>.</li>
+<li>Non‑trivial zeros lie in <span
+class="math inline">\(0&lt;\Re(s)&lt;1\)</span> (Riemann
+Hypothesis).</li>
+<li>Prime Number Theorem: <span class="math inline">\(\pi(x)\sim x/\log
+x\)</span> as <span class="math inline">\(x\to\infty\)</span>.</li>
+</ul>
+<h2 id="main-theorem">Main Theorem</h2>
+<p>(Riemann–von Mangoldt) Explicit formula <span
+class="math display">\[\psi(x)=x-\sum_{\rho}\frac{x^{\rho}}{\rho}-\log(2\pi)\]</span>
+relates Chebyshev function <span
+class="math inline">\(\psi(x)=\sum_{p^k\le x}\log p\)</span> to zeros
+<span class="math inline">\(\rho\)</span> of <span
+class="math inline">\(\zeta(s)\)</span>. The absence of zeros on <span
+class="math inline">\(\Re(s)=1\)</span> yields the Prime Number
+Theorem.</p>
+</body>
+</html>
