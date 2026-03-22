@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="计数组合学">计数组合学</h1>
+<h2 id="定义">定义</h2>
+<p>计数组合学计数离散结构的个数，通常用序列<span
+class="math inline">\((a_n)_{n\ge0}\)</span>来描述。 ## 关键性质 -
+使用普通生成函数 <span class="math inline">\(F(x)=\sum_{n\ge0}a_n
+x^n\)</span> 计数无标号结构。 - 使用指数生成函数 <span
+class="math inline">\(A(x)=\sum_{n\ge0}a_n \frac{x^n}{n!}\)</span>
+计数标号对象。 - Catalan 数 <span
+class="math inline">\(C_n=\frac{1}{n+1}\binom{2n}{n}\)</span> 满足 <span
+class="math inline">\(C_{n+1}=\sum_{i=0}^{n}C_iC_{n-i}\)</span>。 -
+递推关系来源于组合分解。 - Polya 计数定理利用循环指数 <span
+class="math inline">\(Z(G)\)</span> 计数群作用的轨道。 - 容斥原理: <span
+class="math inline">\(|\bigcup_{i=1}^k A_i|=\sum_{\emptyset\neq
+S\subseteq[k]}(-1)^{|S|+1}|\bigcap_{i\in S}A_i|\)</span>。 ## 主要定理
+若 <span class="math inline">\(a_n\)</span> 计数大小为 <span
+class="math inline">\(n\)</span> 的对象，则普通生成函数 <span
+class="math inline">\(F(x)\)</span> 系数即为 <span
+class="math inline">\(a_n\)</span>，指数生成函数 <span
+class="math inline">\(A(x)\)</span> 对标号结构同样成立。Catalan
+数的闭式为 <span
+class="math inline">\(C_n=\frac{1}{n+1}\binom{2n}{n}\)</span>，其生成函数
+<span class="math inline">\(C(x)=\frac{1-\sqrt{1-4x}}{2x}\)</span> 满足
+<span class="math inline">\(C(x)=1+xC(x)^2\)</span>。</p>
+</body>
+</html>
