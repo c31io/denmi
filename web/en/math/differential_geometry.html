@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="differential-geometry">Differential Geometry</h1>
+<h2 id="definition">Definition</h2>
+<p>A smooth manifold <span class="math inline">\(M\)</span> of dimension
+<span class="math inline">\(n\)</span> is a second‑countable Hausdorff
+space with a maximal smooth atlas. Its tangent bundle <span
+class="math inline">\(TM=\bigsqcup_{p\in M}T_pM\)</span> is a <span
+class="math inline">\(2n\)</span>‑dimensional smooth manifold. A vector
+field <span class="math inline">\(X\in\Gamma(TM)\)</span> acts as a
+derivation on <span class="math inline">\(C^\infty(M)\)</span>. The Lie
+bracket <span class="math inline">\([X,Y]\)</span> of two vector fields
+is defined by <span
+class="math inline">\([X,Y](f)=X(Y(f))-Y(X(f))\)</span>. The exterior
+derivative <span
+class="math inline">\(d:\Omega^k(M)\to\Omega^{k+1}(M)\)</span> satisfies
+<span class="math inline">\(d^2=0\)</span>. ## Key Properties - <span
+class="math inline">\(TM\)</span> is a natural vector bundle over <span
+class="math inline">\(M\)</span>. - <span
+class="math inline">\([X,Y]\)</span> is bilinear, antisymmetric and
+satisfies the Jacobi identity. - <span class="math inline">\(d\)</span>
+is linear, graded Leibniz, and <span
+class="math inline">\(d(\alpha\wedge\beta)=d\alpha\wedge\beta+(-1)^{|\alpha|}\alpha\wedge
+d\beta\)</span>. - The curvature tensor <span
+class="math inline">\(R\in\Omega^2(\operatorname{End}(TM))\)</span> is
+defined by <span class="math inline">\(R(X,Y)Z=\nabla_X\nabla_Y
+Z-\nabla_Y\nabla_X Z-\nabla_{[X,Y]}Z\)</span>. ## Main Theorem (Stokes)
+For any oriented <span class="math inline">\(k\)</span>‑chain <span
+class="math inline">\(c\)</span> and <span
+class="math inline">\(\omega\in\Omega^{k-1}(M)\)</span>, <span
+class="math display">\[\int_{c}\,d\omega=\int_{\partial
+c}\,\omega.\]</span></p>
+</body>
+</html>

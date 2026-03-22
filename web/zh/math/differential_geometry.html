@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="微分几何">微分几何</h1>
+<h2 id="定义">定义</h2>
+<p><span class="math inline">\(n\)</span> 维光滑流形 <span
+class="math inline">\(M\)</span> 是第二可数 Hausdorff
+空间，配以极大光滑图册。其切丛 <span
+class="math inline">\(TM=\bigsqcup_{p\in M}T_pM\)</span> 为 <span
+class="math inline">\(2n\)</span> 维光滑流形。向量场 <span
+class="math inline">\(X\in\Gamma(TM)\)</span> 在 <span
+class="math inline">\(C^\infty(M)\)</span>
+上作为求导运算。两个向量场的李括号 <span
+class="math inline">\([X,Y]\)</span> 定义为 <span
+class="math inline">\([X,Y](f)=X(Y(f))-Y(X(f))\)</span>。外微分 <span
+class="math inline">\(d:\Omega^k(M)\to\Omega^{k+1}(M)\)</span> 满足
+<span class="math inline">\(d^2=0\)</span>。 ## 关键性质 - <span
+class="math inline">\(TM\)</span> 是 <span
+class="math inline">\(M\)</span> 上的自然向量丛。 - <span
+class="math inline">\([X,Y]\)</span> 双线性、反对称并满足 Jacobi
+恒等式。 - <span class="math inline">\(d\)</span> 线性、次数 Leibniz
+法则，<span
+class="math inline">\(d(\alpha\wedge\beta)=d\alpha\wedge\beta+(-1)^{|\alpha|}\alpha\wedge
+d\beta\)</span>。 - 曲率张量 <span
+class="math inline">\(R\in\Omega^2(\operatorname{End}(TM))\)</span> 由
+<span class="math inline">\(R(X,Y)Z=\nabla_X\nabla_Y Z-\nabla_Y\nabla_X
+Z-\nabla_{[X,Y]}Z\)</span> 定义。 ## 主定理 (Stokes) 对任意定向 <span
+class="math inline">\(k\)</span>‑链 <span
+class="math inline">\(c\)</span> 与 <span
+class="math inline">\(\omega\in\Omega^{k-1}(M)\)</span>， <span
+class="math display">\[\int_{c}\,d\omega=\int_{\partial
+c}\,\omega.\]</span></p>
+</body>
+</html>
