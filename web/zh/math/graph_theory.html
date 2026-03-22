@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="图论">图论</h1>
+<h2 id="定义">定义</h2>
+<p>简单图 <span class="math inline">\(G=(V,E)\)</span> 由有限顶点集
+<span class="math inline">\(V\)</span> 和边集 <span
+class="math inline">\(E\subseteq\binom{V}{2}\)</span> 构成。其邻接矩阵
+<span class="math inline">\(A\in\{0,1\}^{|V|\times|V|}\)</span> 满足
+<span class="math inline">\(A_{ij}=1\)</span> 当且仅当 <span
+class="math inline">\(\{i,j\}\in E\)</span>。 ## 关键性质 - <span
+class="math inline">\(d(v)=|\{e\in E: v\in e\}|\)</span> 为顶点 <span
+class="math inline">\(v\)</span> 的度。 - <span
+class="math inline">\(G\)</span>
+为欧拉图（存在经过每条边恰好一次的闭路）当且仅当 <span
+class="math inline">\(G\)</span> 连通且每个顶点度数为偶数。 -
+拉普拉斯矩阵 <span class="math inline">\(L=D-A\)</span>（<span
+class="math inline">\(D\)</span> 为度对角矩阵）满足 <span
+class="math inline">\(L\mathbf1=0\)</span>。 - 色多项式 <span
+class="math inline">\(P(G,k)\)</span> 计数顶点集合的恰当 <span
+class="math inline">\(k\)</span>‑染色数。 - 图 <span
+class="math inline">\(T_r(n)\)</span> 为 Turán 图，即顶点划分为 <span
+class="math inline">\(r\)</span> 个尽可能均衡的完全 <span
+class="math inline">\(r\)</span>‑部图。 ## 主定理 对任意简单图 <span
+class="math inline">\(G=(V,E)\)</span>，设 <span
+class="math inline">\(n=|V|\)</span>，<span
+class="math inline">\(L\)</span> 为其拉普拉斯矩阵，则 <span
+class="math inline">\(G\)</span> 的生成树数目 <span
+class="math inline">\(\tau(G)\)</span> 等于 <span
+class="math inline">\(L\)</span> 的任意余子式（Kirchhoff 矩阵树定理）。
+此外， - <span class="math inline">\(G\)</span> 存在欧拉回路 <span
+class="math inline">\(\iff\)</span> 每个顶点度数为偶。 - <span
+class="math inline">\(P(G,k)\)</span> 是关于 <span
+class="math inline">\(k\)</span> 的 <span
+class="math inline">\(n\)</span> 次多项式，首项系数为 <span
+class="math inline">\(1\)</span>。 - 不含 <span
+class="math inline">\((r+1)\)</span>‑团的最大边数满足 <span
+class="math display">\[\operatorname{ex}(n,K_{r+1}) =
+\Bigl(1-\frac1r\Bigr)\frac{n^2}{2},\]</span> 该上界唯一由 <span
+class="math inline">\(T_r(n)\)</span> 达到（Turán 定理）。</p>
+</body>
+</html>

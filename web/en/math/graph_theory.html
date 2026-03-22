@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="graph-theory">Graph Theory</h1>
+<h2 id="definition">Definition</h2>
+<p>A simple graph <span class="math inline">\(G=(V,E)\)</span> has
+vertex set <span class="math inline">\(V\)</span> and edge set <span
+class="math inline">\(E\subseteq\binom{V}{2}\)</span>. Its adjacency
+matrix <span class="math inline">\(A\in\{0,1\}^{|V|\times|V|}\)</span>
+satisfies <span class="math inline">\(A_{ij}=1\)</span> iff <span
+class="math inline">\(\{i,j\}\in E\)</span>. ## Key Properties - <span
+class="math inline">\(d(v)=|\{e\in E: v\in e\}|\)</span> is the degree
+of <span class="math inline">\(v\)</span>. - <span
+class="math inline">\(G\)</span> is Eulerian (contains a closed trail
+using each edge once) iff <span class="math inline">\(G\)</span> is
+connected and every vertex has even degree. - The Laplacian <span
+class="math inline">\(L=D-A\)</span> (with <span
+class="math inline">\(D\)</span> diagonal of degrees) has <span
+class="math inline">\(L\mathbf1=0\)</span>. - The chromatic polynomial
+<span class="math inline">\(P(G,k)\)</span> counts proper <span
+class="math inline">\(k\)</span>‑colorings of <span
+class="math inline">\(V\)</span>. - The Turán graph <span
+class="math inline">\(T_r(n)\)</span> is the complete <span
+class="math inline">\(r\)</span>‑partite graph with parts as equal as
+possible. ## Main Theorem For any simple <span
+class="math inline">\(G=(V,E)\)</span> with <span
+class="math inline">\(n=|V|\)</span> and Laplacian <span
+class="math inline">\(L\)</span>, the number <span
+class="math inline">\(\tau(G)\)</span> of spanning trees equals any
+cofactor of <span class="math inline">\(L\)</span> (Kirchhoff’s
+Matrix‑Tree Theorem). Moreover, - <span class="math inline">\(G\)</span>
+has an Eulerian circuit <span class="math inline">\(\iff\)</span> every
+vertex has even degree. - <span class="math inline">\(P(G,k)\)</span> is
+a polynomial in <span class="math inline">\(k\)</span> of degree <span
+class="math inline">\(n\)</span> with leading coefficient <span
+class="math inline">\(1\)</span>. - The extremal number <span
+class="math inline">\(\operatorname{ex}(n,K_{r+1})\)</span> (maximum
+edges without a <span class="math inline">\((r+1)\)</span>‑clique)
+satisfies <span class="math display">\[\operatorname{ex}(n,K_{r+1}) =
+\Bigl(1-\frac1r\Bigr)\frac{n^2}{2},\]</span> attained uniquely by <span
+class="math inline">\(T_r(n)\)</span> (Turán’s Theorem).</p>
+</body>
+</html>
