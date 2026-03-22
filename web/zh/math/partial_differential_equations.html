@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="偏微分方程">偏微分方程</h1>
+<h2 id="定义">定义</h2>
+<p>偏微分方程（PDE）是关于未知函数 <span
+class="math inline">\(u(x)\)</span> 在域 <span
+class="math inline">\(\Omega\subset\mathbb{R}^n\)</span>
+上偏导数的方程。 ## 关键性质 - 阶数：最高导数的阶。 - 线性性：<span
+class="math inline">\(Lu=f\)</span> 为线性，<span
+class="math inline">\(F(u,\partial^\alpha u)=0\)</span> 为非线性。 -
+类型：椭圆、抛物、双曲（由主象征决定）。 -
+适定性：存在性、唯一性、稳定性。 ## 主定理 主象征 <span
+class="math inline">\(\sigma_P(\xi)=\sum_{|\alpha|=m}a_\alpha\xi^\alpha\)</span>
+分类方程：若 <span
+class="math inline">\(\sigma_P(\xi)\neq0\)</span>（<span
+class="math inline">\(\forall\xi\neq0\)</span>）为椭圆；若一方向平滑则为抛物；若存在实特征则为双曲。
+分离变量设 <span
+class="math inline">\(u(x,t)=X(x)T(t)\)</span>，得到特征值问题 <span
+class="math inline">\(L_1X=\lambda X\)</span>, <span
+class="math inline">\(T&#39;=\lambda T\)</span>。 对线性算子 <span
+class="math inline">\(L\)</span>，基本解 <span
+class="math inline">\(G(x,y)\)</span> 满足 <span
+class="math inline">\(LG(x,y)=\delta(x-y)\)</span>，则 <span
+class="math inline">\(u(x)=\int_\Omega G(x,y)f(y)dy\)</span>。 Duhamel
+原理把非齐次发展方程的解写作 <span
+class="math inline">\(u(t)=\partial_t\int_0^t
+S(t-s)f(s)ds\)</span>，其中 <span class="math inline">\(S(t)\)</span>
+为空间算子的半群。</p>
+</body>
+</html>

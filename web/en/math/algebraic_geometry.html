@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="algebraic-geometry">Algebraic Geometry</h1>
+<h2 id="definition">Definition</h2>
+<p>Algebraic geometry studies zero sets of polynomials; an
+<strong>affine variety</strong> <span
+class="math inline">\(V(I)\subset\mathbb{A}^n(k)\)</span> is <span
+class="math inline">\(V(I)=\{a\in k^n\mid f(a)=0\forall f\in
+I\}\)</span>, where <span class="math inline">\(I\subset
+k[x_1,\dots,x_n]\)</span> is an ideal. ## Key Properties -
+Nullstellensatz: <span class="math inline">\(I(V(I))=\sqrt{I}\)</span>
+for algebraically closed <span class="math inline">\(k\)</span>. -
+Projective variety: homogeneous ideal <span
+class="math inline">\(I\subset k[x_0,\dots,x_n]\)</span>, <span
+class="math inline">\(V(I)\subset\mathbb{P}^n(k)\)</span>. - Dimension:
+<span class="math inline">\(\dim X=\operatorname{trdeg}_k k(X)\)</span>,
+equals Krull dimension of coordinate ring. - Bezout: If <span
+class="math inline">\(C_1,\dots,C_r\)</span> projective curves intersect
+properly, <span class="math inline">\(\sum_i\deg C_i\prod_{j\neq i}\deg
+C_j\)</span> points counted with multiplicity. ## Main Theorem For
+algebraically closed <span class="math inline">\(k\)</span>, an affine
+set <span class="math inline">\(V(I)\)</span> is irreducible <span
+class="math inline">\(\iff\)</span> <span
+class="math inline">\(I\)</span> prime; <span class="math inline">\(\dim
+V(I)=\operatorname{ht}I=n-\operatorname{trdeg}_k k[V(I)]\)</span>
+(Nullstellensatz + dimension). If <span
+class="math inline">\(X,Y\subset\mathbb{P}^n\)</span> intersect
+transversely, <span class="math inline">\(|X\cap Y|=\deg X\cdot\deg
+Y\)</span> (Bezout).</p>
+</body>
+</html>
