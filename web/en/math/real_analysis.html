@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="real-analysis">Real Analysis</h1>
+<h2 id="definition">Definition</h2>
+<p>Real analysis studies limits, continuity, differentiation,
+integration, and convergence on <span
+class="math inline">\(\mathbb{R}\)</span> and metric spaces. ## Key
+Properties - Riemann integral: <span class="math inline">\(\int_a^b f =
+\sup_{P} L(f,P) = \inf_{P} U(f,P)\)</span> - Stieltjes integral: <span
+class="math inline">\(\int_a^b f\,dg = \lim_{|P|\to0}\sum
+f(x_i)[g(x_{i+1})-g(x_i)]\)</span> - <span
+class="math inline">\(\ell^p\)</span> spaces: <span
+class="math inline">\(\|f\|_p = (\int|f|^p)^{1/p}\)</span>, <span
+class="math inline">\(1\le p&lt;\infty\)</span> - Absolute continuity:
+<span class="math inline">\(g\)</span> abs. continuous <span
+class="math inline">\(\Leftrightarrow g = \int f + C\)</span>, <span
+class="math inline">\(f\in L^1\)</span> ## Main Theorem
+<strong>Fundamental Theorem of Calculus (FTC):</strong> If <span
+class="math inline">\(F\)</span> is absolutely continuous, then <span
+class="math inline">\(F&#39; = f\)</span> a.e. and <span
+class="math inline">\(F(x)-F(a) = \int_a^x f\)</span>. <strong>Dominated
+Convergence (LDC):</strong> If <span class="math inline">\(f_n \to
+f\)</span> a.e., <span class="math inline">\(|f_n| \le g\in
+L^1\)</span>, then <span class="math inline">\(\int f_n \to \int
+f\)</span>. <strong>Uniform Convergence Theorem:</strong> <span
+class="math inline">\(S = \sum u_k\)</span>, if <span
+class="math inline">\(\sup |S-S_N| \to 0\)</span> then termwise
+integration/differentiation justified.</p>
+</body>
+</html>
