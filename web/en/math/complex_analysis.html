@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="complex-analysis">Complex Analysis</h1>
+<h2 id="definition">Definition</h2>
+<p>A function <span class="math inline">\(f:\Omega \to
+\mathbb{C}\)</span> on an open set <span class="math inline">\(\Omega
+\subset \mathbb{C}\)</span> is holomorphic if the complex derivative
+<span class="math inline">\(f&#39;(z) = \lim_{h\to 0}
+\frac{f(z+h)-f(z)}{h}\)</span> exists for all <span
+class="math inline">\(z \in \Omega\)</span>.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li><strong>Cauchy–Riemann</strong>: If <span class="math inline">\(f =
+u + iv\)</span>, then <span class="math inline">\(f\)</span> is
+holomorphic iff <span class="math inline">\(u_x = v_y\)</span> and <span
+class="math inline">\(u_y = -v_x\)</span>.</li>
+<li><strong>Cauchy Integral Theorem</strong>: <span
+class="math inline">\(\oint_{\gamma} f(z)\,dz = 0\)</span> for any
+closed curve <span class="math inline">\(\gamma\)</span> in a simply
+connected domain where <span class="math inline">\(f\)</span> is
+holomorphic.</li>
+<li><strong>Residue Theorem</strong>: <span
+class="math inline">\(\oint_{\gamma} f(z)\,dz = 2\pi i \sum
+\operatorname{Res}(f, a_k)\)</span> for isolated singularities <span
+class="math inline">\(a_k\)</span> inside <span
+class="math inline">\(\gamma\)</span>.</li>
+<li><strong>Conformal Mapping</strong>: A holomorphic <span
+class="math inline">\(f\)</span> with <span
+class="math inline">\(f&#39;(z) \neq 0\)</span> preserves angles
+locally.</li>
+<li><strong>Laurent Series</strong>: <span class="math inline">\(f(z) =
+\sum_{n=-\infty}^{\infty} a_n (z-z_0)^n\)</span> in an annulus around an
+isolated singularity.</li>
+</ul>
+<h2 id="main-theorem">Main Theorem</h2>
+<p>If <span class="math inline">\(f\)</span> is holomorphic in a simply
+connected domain, then for any closed curve <span
+class="math inline">\(\gamma\)</span>, <span
+class="math inline">\(\oint_{\gamma} f(z)\,dz = 0\)</span>; moreover
+<span class="math inline">\(f\)</span> is infinitely differentiable and
+equals its Taylor series locally. For an isolated singularity at <span
+class="math inline">\(a\)</span>, <span
+class="math inline">\(\operatorname{Res}(f,a)\)</span> determines the
+integral via the residue theorem.</p>
+</body>
+</html>

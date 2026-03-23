@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1
+id="tensor-algebra-definitionvector-space-votimes-w-together-with-a-bilinear-map-otimes-vtimes-wto-votimes-w-is-called-the-tensor-product-of-v-and-w.-it-is-defined-by-the-universal-property-below.-key-properties--bilinearity-vvwvotimes-wvotimes-w-vwwvotimes-wvotimes-w.--basis-if-e_i-and-f_j-are-bases-of-v-and-w-then-e_iotimes-f_j-is-a-basis-of-votimes-w.--universality-for-any-bilinear-bvtimes-wto-u-there-is-a-unique-linear-tilde-bvotimes-wto-u-with-bvwtilde-bvotimes-w.--symmetricantisymmetric-subspaces-s2vvotimes-vlangle-votimes-w-wotimes-vrangle-lambda2vvotimes-vlangle-votimes-wwotimes-vrangle.--metric-tensor-a-nondegenerate-symmetric-bilinear-g_ij-on-v-yields-an-isomorphism-vcong-v.--riemann-curvature-ri_jklpartial_kgammai_jl-partial_lgammai_jkgammai_kmgammam_jl-gammai_lmgammam_jk.-main-theorem-universality-of-tensor-productany-bilinear-map-phivtimes-wto-u-there-exists-a-unique-linear-map-tildephivotimes-wto-u-such-that-phivwtildephivotimes-w.-this-property-characterises-votimes-w-up-to-unique-isomorphism.">Tensor
+Algebra## Definitionvector space <span class="math inline">\(V\otimes
+W\)</span> together with a bilinear map <span
+class="math inline">\(\otimes: V\times W\to V\otimes W\)</span> is
+called the <strong>tensor product</strong> of <span
+class="math inline">\(V\)</span> and <span
+class="math inline">\(W\)</span>. It is defined by the universal
+property below.## Key Properties- <strong>Bilinearity</strong>: <span
+class="math inline">\((v+v&#39;,w)=v\otimes w+v&#39;\otimes w\)</span>,
+<span class="math inline">\((v,w+w&#39;)=v\otimes w+v\otimes
+w&#39;\)</span>.- <strong>Basis</strong>: If <span
+class="math inline">\(\{e_i\}\)</span> and <span
+class="math inline">\(\{f_j\}\)</span> are bases of <span
+class="math inline">\(V\)</span> and <span
+class="math inline">\(W\)</span>, then <span
+class="math inline">\(\{e_i\otimes f_j\}\)</span> is a basis of <span
+class="math inline">\(V\otimes W\)</span>.-
+<strong>Universality</strong>: For any bilinear <span
+class="math inline">\(B:V\times W\to U\)</span> there is a unique linear
+<span class="math inline">\(\tilde B:V\otimes W\to U\)</span> with <span
+class="math inline">\(B(v,w)=\tilde B(v\otimes w)\)</span>.-
+<strong>Symmetric/antisymmetric subspaces</strong>: <span
+class="math inline">\(S^2V=(V\otimes V)/\langle v\otimes w-w\otimes
+v\rangle\)</span>, <span class="math inline">\(\Lambda^2V=(V\otimes
+V)/\langle v\otimes w+w\otimes v\rangle\)</span>.- <strong>Metric
+tensor</strong>: A non‑degenerate symmetric bilinear <span
+class="math inline">\(g_{ij}\)</span> on <span
+class="math inline">\(V\)</span> yields an isomorphism <span
+class="math inline">\(V\cong V^*\)</span>.- <strong>Riemann
+curvature</strong>: <span
+class="math inline">\(R^i_{\;jkl}=\partial_k\Gamma^i_{jl}-\partial_l\Gamma^i_{jk}+\Gamma^i_{km}\Gamma^m_{jl}-\Gamma^i_{lm}\Gamma^m_{jk}\)</span>.##
+Main Theorem (Universality of Tensor Product)any bilinear map <span
+class="math inline">\(\phi:V\times W\to U\)</span> there exists a unique
+linear map <span class="math inline">\(\tilde\phi:V\otimes W\to
+U\)</span> such that <span
+class="math inline">\(\phi(v,w)=\tilde\phi(v\otimes w)\)</span>. This
+property characterises <span class="math inline">\(V\otimes W\)</span>
+up to unique isomorphism.</h1>
+</body>
+</html>
