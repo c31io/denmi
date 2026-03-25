@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="调和分析">调和分析</h1>
+<h2 id="定义">定义</h2>
+<p>调和分析研究将函数表示为基本波形（指数函数、小波）的叠加，以及拓扑群分解为不可约成分。</p>
+<h2 id="关键性质">关键性质</h2>
+<ul>
+<li>傅里叶变换: <span class="math inline">\(\hat{f}(\xi) =
+\int_{\mathbb{R}^n} e^{-2\pi i x\cdot\xi} f(x)\,dx\)</span></li>
+<li>卷积定理: <span class="math inline">\(\widehat{f * g} = \hat{f}
+\cdot \hat{g}\)</span></li>
+<li>Plancherel 恒等式: <span class="math inline">\(\|f\|_2 =
+\|\hat{f}\|_2\)</span></li>
+<li>不确定性原理: <span class="math inline">\(\|x f\|_2 \cdot \|\xi
+\hat{f}\|_2 \geq \frac{n}{4\pi}\)</span></li>
+</ul>
+<h2 id="主定理-stonevon-neumann">主定理 (Stone–von Neumann)</h2>
+<p>对于局部紧致阿贝尔群 <span
+class="math inline">\(G\)</span>，傅里叶变换可延拓为酉算子 <span
+class="math inline">\(L^2(G) \to L^2(\widehat{G})\)</span>。且当 <span
+class="math inline">\(G\)</span> 紧致时，特征函数构成 <span
+class="math inline">\(L^2(G)\)</span> 的正交基。</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="harmonic-analysis">Harmonic Analysis</h1>
+<h2 id="definition">Definition</h2>
+<p>Harmonic analysis studies the representation of functions as
+superpositions of basic waveforms (exponentials, wavelets) and the
+decomposition of topological groups into irreducible components.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li>Fourier transform: <span class="math inline">\(\hat{f}(\xi) =
+\int_{\mathbb{R}^n} e^{-2\pi i x\cdot\xi} f(x)\,dx\)</span></li>
+<li>Convolution theorem: <span class="math inline">\(\widehat{f * g} =
+\hat{f} \cdot \hat{g}\)</span></li>
+<li>Plancherel identity: <span class="math inline">\(\|f\|_2 =
+\|\hat{f}\|_2\)</span></li>
+<li>Uncertainty principle: <span class="math inline">\(\|x f\|_2 \cdot
+\|\xi \hat{f}\|_2 \geq \frac{n}{4\pi}\)</span></li>
+</ul>
+<h2 id="main-theorem-stonevon-neumann">Main Theorem (Stone–von
+Neumann)</h2>
+<p>For a locally compact abelian group <span
+class="math inline">\(G\)</span>, the Fourier transform extends to a
+unitary operator <span class="math inline">\(L^2(G) \to
+L^2(\widehat{G})\)</span>. Moreover, the characters form an orthonormal
+basis for <span class="math inline">\(L^2(G)\)</span> when <span
+class="math inline">\(G\)</span> is compact.</p>
+</body>
+</html>
