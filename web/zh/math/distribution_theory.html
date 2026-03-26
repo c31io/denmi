@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="分布理论">分布理论</h1>
+<h2 id="定义">定义</h2>
+<p><span class="math inline">\(\Omega \subset \mathbb{R}^n\)</span>
+上的分布是连续线性泛函 <span class="math inline">\(u:
+\mathcal{D}(\Omega) \to \mathbb{C}\)</span>，其中 <span
+class="math inline">\(\mathcal{D}(\Omega) = C_c^\infty(\Omega)\)</span>
+配备标准 LF-拓扑。</p>
+<h2 id="关键性质">关键性质</h2>
+<ul>
+<li><span class="math inline">\(\mathcal{D}&#39;(\Omega)\)</span>
+包含所有局部可积函数 <span class="math inline">\(f\)</span>，通过 <span
+class="math inline">\(\langle f, \varphi \rangle = \int
+f\varphi\)</span> 嵌入</li>
+<li>每个分布都具有任意阶导数：<span class="math inline">\(\langle
+\partial^\alpha u, \varphi \rangle = (-1)^{|\alpha|}\langle u,
+\partial^\alpha \varphi \rangle\)</span></li>
+<li><span class="math inline">\(\mathcal{D}&#39;(\Omega)\)</span>
+是完备的、核的；缓增分布 <span
+class="math inline">\(\mathcal{S}&#39;\)</span> 是 Schwartz 空间 <span
+class="math inline">\(\mathcal{S}\)</span> 的对偶</li>
+<li>傅里叶变换：<span class="math inline">\(\mathcal{F}:
+\mathcal{S}&#39; \to \mathcal{S}&#39;\)</span> 是同构</li>
+<li>逼近：<span class="math inline">\(u * \varphi_\varepsilon \to
+u\)</span> 当 <span class="math inline">\(\varepsilon \to
+0\)</span></li>
+</ul>
+<h2 id="主定理-schwartz-核定理">主定理 (Schwartz 核定理)</h2>
+<p>对任意 <span class="math inline">\(K \in \mathcal{D}&#39;(\Omega
+\times \Omega)\)</span>，存在唯一的连续线性算子 <span
+class="math inline">\(T: \mathcal{D}(\Omega) \to
+\mathcal{D}&#39;(\Omega)\)</span> 使得 <span
+class="math inline">\(\langle T\varphi, \psi \rangle = \langle K,
+\varphi \otimes \psi \rangle\)</span>。特别地，每个 <span
+class="math inline">\(T \in \mathcal{L}(\mathcal{D},
+\mathcal{D}&#39;)\)</span> 对应一个分布核。</p>
+</body>
+</html>

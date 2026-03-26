@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="distribution-theory">Distribution Theory</h1>
+<h2 id="definition">Definition</h2>
+<p>A distribution on <span class="math inline">\(\Omega \subset
+\mathbb{R}^n\)</span> is a continuous linear functional <span
+class="math inline">\(u: \mathcal{D}(\Omega) \to \mathbb{C}\)</span>,
+where <span class="math inline">\(\mathcal{D}(\Omega) =
+C_c^\infty(\Omega)\)</span> with the standard LF-topology.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li><span class="math inline">\(\mathcal{D}&#39;(\Omega)\)</span>
+contains all locally integrable <span class="math inline">\(f\)</span>
+via <span class="math inline">\(\langle f, \varphi \rangle = \int
+f\varphi\)</span></li>
+<li>Every distribution has derivatives of all orders: <span
+class="math inline">\(\langle \partial^\alpha u, \varphi \rangle =
+(-1)^{|\alpha|}\langle u, \partial^\alpha \varphi \rangle\)</span></li>
+<li><span class="math inline">\(\mathcal{D}&#39;(\Omega)\)</span> is
+complete, nuclear; tempered distributions <span
+class="math inline">\(\mathcal{S}&#39;\)</span> are dual to Schwartz
+space <span class="math inline">\(\mathcal{S}\)</span></li>
+<li>Fourier transform: <span class="math inline">\(\mathcal{F}:
+\mathcal{S}&#39; \to \mathcal{S}&#39;\)</span> is an isomorphism</li>
+<li>Approximation: <span class="math inline">\(u * \varphi_\varepsilon
+\to u\)</span> as <span class="math inline">\(\varepsilon \to
+0\)</span></li>
+</ul>
+<h2 id="main-theorem-schwartz-kernel-theorem">Main Theorem (Schwartz
+Kernel Theorem)</h2>
+<p>For any <span class="math inline">\(K \in \mathcal{D}&#39;(\Omega
+\times \Omega)\)</span>, there exists a unique continuous linear
+operator <span class="math inline">\(T: \mathcal{D}(\Omega) \to
+\mathcal{D}&#39;(\Omega)\)</span> such that <span
+class="math inline">\(\langle T\varphi, \psi \rangle = \langle K,
+\varphi \otimes \psi \rangle\)</span>. In particular, every <span
+class="math inline">\(T \in \mathcal{L}(\mathcal{D},
+\mathcal{D}&#39;)\)</span> corresponds to a distribution kernel.</p>
+</body>
+</html>
