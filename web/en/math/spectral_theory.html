@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="spectral-theory">Spectral Theory</h1>
+<h2 id="definition">Definition</h2>
+<p>Let <span class="math inline">\(T: \mathcal{H} \to
+\mathcal{H}\)</span> be a bounded linear operator on a Hilbert space.
+The <strong>spectrum</strong> <span
+class="math inline">\(\sigma(T)\)</span> is the set of <span
+class="math inline">\(\lambda \in \mathbb{C}\)</span> for which <span
+class="math inline">\(T-\lambda I\)</span> is not invertible. Its
+complement <span class="math inline">\(\rho(T)\)</span> is the
+<strong>resolvent set</strong>.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li><span class="math inline">\(\sigma(T)\)</span> is non-empty and
+compact in <span class="math inline">\(\mathbb{C}\)</span>; <span
+class="math inline">\(\sigma(T) \subset \{z:|z|\leq
+\|T\|\}\)</span></li>
+<li>Spectral radius: <span class="math inline">\(r(T) = \sup
+\{|\lambda|:\lambda \in \sigma(T)\} = \lim_{n\to\infty}
+\|T^n\|^{1/n}\)</span></li>
+<li>For self-adjoint <span class="math inline">\(T\)</span>, <span
+class="math inline">\(\sigma(T) \subset \mathbb{R}\)</span> and <span
+class="math inline">\(\sigma(T) = [m, M]\)</span> with <span
+class="math inline">\(m,M \in \mathbb{R}\)</span></li>
+<li>The <strong>resolvent</strong> <span
+class="math inline">\(R(\lambda) = (T-\lambda I)^{-1}\)</span> is
+analytic on <span class="math inline">\(\rho(T)\)</span></li>
+<li><strong>Spectral mapping theorem</strong>: <span
+class="math inline">\(\sigma(f(T)) = f(\sigma(T))\)</span> for
+polynomials <span class="math inline">\(f\)</span></li>
+</ul>
+<h2 id="main-theorem">Main Theorem</h2>
+<p>Let <span class="math inline">\(T=T^*\)</span> be a bounded
+self-adjoint operator. There exists a unique <strong>spectral
+measure</strong> <span class="math inline">\(E\)</span> on <span
+class="math inline">\(\mathbb{R}\)</span> projecting onto <span
+class="math inline">\(\mathcal{H}\)</span> such that <span
+class="math display">\[T = \int_{\sigma(T)} \lambda \,
+dE(\lambda).\]</span> Equivalently, <span
+class="math inline">\(\mathcal{H}\)</span> decomposes as an orthogonal
+direct sum of eigenspaces for real eigenvalues, with continuous spectrum
+accounted for by the spectral integral.</p>
+</body>
+</html>
