@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="算子理论">算子理论</h1>
+<h2 id="定义">定义</h2>
+<p>设 <span class="math inline">\(\mathcal{H}, \mathcal{K}\)</span>
+为希尔伯特空间, 线性算子 <span class="math inline">\(T: \mathcal{H} \to
+\mathcal{K}\)</span> 有界若存在常数 <span
+class="math inline">\(C\)</span> 使 <span class="math inline">\(\|Tx\|
+\leq C\|x\|\)</span>。算子范数 <span class="math inline">\(\|T\| =
+\sup_{\|x\|=1}\|Tx\|\)</span>。 ## 主要性质 - 谱 <span
+class="math inline">\(\sigma(T) = \{\lambda: T-\lambda I \text{
+不可逆}\}\)</span> - 预解集 <span class="math inline">\(\rho(T) =
+\mathbb{C} \setminus \sigma(T)\)</span> - 伴随 <span
+class="math inline">\(T^*\)</span> 满足 <span
+class="math inline">\(\langle Tx, y\rangle = \langle x,
+T^*y\rangle\)</span> - <span class="math inline">\(T\)</span> 正规若
+<span class="math inline">\(T^*T = TT^*\)</span>，自伴若 <span
+class="math inline">\(T = T^*\)</span> ## 主定理 (谱定理) 对正规算子
+<span class="math inline">\(T\)</span>，存在谱测度 <span
+class="math inline">\(E\)</span> 于 <span
+class="math inline">\(\sigma(T)\)</span> 使 <span
+class="math display">\[T = \int_{\sigma(T)} \lambda \,
+dE(\lambda).\]</span></p>
+</body>
+</html>
