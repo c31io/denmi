@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="symplectic-geometry">Symplectic Geometry</h1>
+<h2 id="definition">Definition</h2>
+<p>A symplectic manifold <span class="math inline">\((M^{2n},
+\omega)\)</span> is an even-dimensional smooth manifold with a closed
+non-degenerate 2-form: <span class="math inline">\(d\omega = 0\)</span>
+and <span class="math inline">\(\omega^n\)</span> is a volume form.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li><span class="math inline">\(X_H\)</span> defined by <span
+class="math inline">\(\omega(X_H, \cdot) = dH\)</span> is the
+Hamiltonian vector field</li>
+<li>Hamiltonian flow <span class="math inline">\(\phi_t\)</span>
+preserves <span class="math inline">\(\omega\)</span> and <span
+class="math inline">\(H\)</span></li>
+<li>Darboux: locally <span class="math inline">\(\omega = \sum_{i=1}^n
+dp_i \wedge dq_i\)</span></li>
+<li>Moment map <span class="math inline">\(\mu: M \to
+\mathfrak{g}^*\)</span> for <span
+class="math inline">\(G\)</span>-action preserving <span
+class="math inline">\(\omega\)</span></li>
+</ul>
+<h2 id="main-theorem">Main Theorem</h2>
+<p><strong>Darboux Theorem:</strong> All symplectic manifolds are
+locally isomorphic. <strong>Arnold Conjecture:</strong> <span
+class="math inline">\(\#\)</span> periodic orbits of Hamiltonian system
+on compact <span class="math inline">\(M\)</span> <span
+class="math inline">\(\geq\)</span> <span class="math inline">\(\sum_i
+\dim H_i(M; \mathbb{Q})\)</span>. <strong>Liouville
+Integrability:</strong> <span class="math inline">\(n\)</span>
+independent commuting <span class="math inline">\(H_i\)</span> yield
+action-angle coordinates <span class="math inline">\((I_i,
+\theta_i)\)</span> with <span class="math inline">\(\omega = \sum dI_i
+\wedge d\theta_i\)</span>.</p>
+</body>
+</html>

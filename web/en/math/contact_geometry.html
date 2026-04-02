@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="contact-geometry">Contact Geometry</h1>
+<h2 id="definition">Definition</h2>
+<p>A smooth <span class="math inline">\(2n+1\)</span>-dimensional
+manifold <span class="math inline">\(M\)</span> carries a
+<strong>contact structure</strong> <span
+class="math inline">\(\xi\)</span> if <span class="math inline">\(\xi
+\subset TM\)</span> is a completely non-integrable rank <span
+class="math inline">\(2n\)</span> distribution: there exists a contact
+1-form <span class="math inline">\(\alpha\)</span> such that <span
+class="math inline">\(\xi = \ker\alpha\)</span> and <span
+class="math inline">\(\alpha \wedge (d\alpha)^n \neq 0\)</span>
+everywhere. ## Key Properties - Odd dimensional only; even dimension
+impossible - <strong>Non-integrability</strong>: <span
+class="math inline">\(d\alpha|_{\xi}\)</span> is nondegenerate, so <span
+class="math inline">\(\xi\)</span> cannot arise as tangent spaces to
+hypersurfaces - Reeb vector field <span
+class="math inline">\(R_\alpha\)</span> satisfies <span
+class="math inline">\(\alpha(R_\alpha)=1\)</span>, <span
+class="math inline">\(d\alpha(R_\alpha,\cdot)=0\)</span> - Contact
+structures are rigid: small deformations remain contact - Every
+orientable 3-manifold admits a contact structure (Martinet theorem) ##
+Main Theorem <strong>Gray’s Stability Theorem</strong>: For a compact
+manifold <span class="math inline">\(M\)</span>, the space of contact
+structures up to isotopy is open in the space of plane fields.
+Equivalently, any path <span class="math inline">\(\xi_t\)</span> of
+contact structures through <span class="math inline">\(\xi_0\)</span>
+can be isotope to a path of contact forms with fixed Reeb vector field.
+<span class="math display">\[
+\text{If } \xi_t \text{ is contact for } t \in [0,1] \text{, there
+exists an isotopy } \phi_t \text{ with } \phi_t^*\xi_t = \xi_0.
+\]</span></p>
+</body>
+</html>

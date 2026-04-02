@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="辛几何">辛几何</h1>
+<h2 id="定义">定义</h2>
+<p>辛流形 <span class="math inline">\((M^{2n}, \omega)\)</span>
+是配有一个闭非退化2-形式的偶数维光滑流形：<span
+class="math inline">\(d\omega = 0\)</span> 且 <span
+class="math inline">\(\omega^n\)</span> 为体积形式。</p>
+<h2 id="关键性质">关键性质</h2>
+<ul>
+<li><span class="math inline">\(X_H\)</span> 由 <span
+class="math inline">\(\omega(X_H, \cdot) = dH\)</span>
+定义为哈密顿向量场</li>
+<li>哈密顿流 <span class="math inline">\(\phi_t\)</span> 保持 <span
+class="math inline">\(\omega\)</span> 和 <span
+class="math inline">\(H\)</span></li>
+<li>Darboux：局部有 <span class="math inline">\(\omega = \sum_{i=1}^n
+dp_i \wedge dq_i\)</span></li>
+<li>moment map <span class="math inline">\(\mu: M \to
+\mathfrak{g}^*\)</span> 用于保持 <span
+class="math inline">\(\omega\)</span> 的 <span
+class="math inline">\(G\)</span> 作用</li>
+</ul>
+<h2 id="主定理">主定理</h2>
+<p><strong>Darboux 定理：</strong> 所有辛流形局部同构。 <strong>Arnold
+猜想：</strong> 紧致 <span class="math inline">\(M\)</span>
+上哈密顿系统的周期轨道数 <span class="math inline">\(\geq\)</span> <span
+class="math inline">\(\sum_i \dim H_i(M; \mathbb{Q})\)</span>。
+<strong>Liouville 积可积：</strong> <span
+class="math inline">\(n\)</span> 个独立交换的 <span
+class="math inline">\(H_i\)</span> 给出作用角坐标 <span
+class="math inline">\((I_i, \theta_i)\)</span> 使得 <span
+class="math inline">\(\omega = \sum dI_i \wedge d\theta_i\)</span>。</p>
+</body>
+</html>

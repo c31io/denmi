@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="接触几何">接触几何</h1>
+<h2 id="定义">定义</h2>
+<p>光滑的 <span class="math inline">\(2n+1\)</span> 维流形 <span
+class="math inline">\(M\)</span> 承载一个<strong>接触结构</strong> <span
+class="math inline">\(\xi\)</span>，若 <span class="math inline">\(\xi
+\subset TM\)</span> 是一个完全不可积的 <span
+class="math inline">\(2n\)</span> 维分布：存在接触 1-形式 <span
+class="math inline">\(\alpha\)</span> 使 <span class="math inline">\(\xi
+= \ker\alpha\)</span> 且 <span class="math inline">\(\alpha \wedge
+(d\alpha)^n \neq 0\)</span> 处处成立。 ## 关键性质 -
+仅在奇数维；偶数维不可能 - <strong>不可积性</strong>：<span
+class="math inline">\(d\alpha|_{\xi}\)</span> 非退化，故 <span
+class="math inline">\(\xi\)</span> 不能作为超曲面的切空间 - Reeb 向量场
+<span class="math inline">\(R_\alpha\)</span> 满足 <span
+class="math inline">\(\alpha(R_\alpha)=1\)</span>, <span
+class="math inline">\(d\alpha(R_\alpha,\cdot)=0\)</span> -
+接触结构是刚性的：小扰动仍保持接触 - 每个可定向 3
+维流形都存在接触结构（Martinet 定理） ## 主要定理 <strong>Gray
+稳定性定理</strong>：紧流形 <span class="math inline">\(M\)</span>
+上，接触结构（在同伦意义下）的空间在平面场空间中开放。等价地，任何过
+<span class="math inline">\(\xi_0\)</span> 的接触结构路径 <span
+class="math inline">\(\xi_t\)</span> 都可以同痕化为保持 Reeb
+向量场不变的接触形式路径。 <span class="math display">\[
+\text{若 } \xi_t \text{ 对 } t \in [0,1] \text{ 为接触结构，则存在同痕 }
+\phi_t \text{ 使 } \phi_t^*\xi_t = \xi_0.
+\]</span></p>
+</body>
+</html>
