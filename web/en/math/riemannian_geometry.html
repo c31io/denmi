@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="riemannian-geometry">Riemannian Geometry</h1>
+<h2 id="definition">Definition</h2>
+<p>A Riemannian manifold <span class="math inline">\((M,g)\)</span> is a
+smooth manifold with a Riemannian metric <span
+class="math inline">\(g_p: T_pM \times T_pM \to \mathbb{R}\)</span>, a
+smoothly varying positive-definite inner product on each tangent
+space.</p>
+<h2 id="key-properties">Key Properties</h2>
+<ul>
+<li>Levi-Civita connection <span class="math inline">\(\nabla\)</span>
+is the unique torsion-free, metric-compatible affine connection</li>
+<li>Geodesics satisfy <span
+class="math inline">\(\nabla_{\dot{\gamma}}\dot{\gamma} =
+0\)</span></li>
+<li>Riemann curvature: <span class="math inline">\(R(X,Y)Z =
+\nabla_X\nabla_Y Z - \nabla_Y\nabla_X Z - \nabla_{[X,Y]}Z\)</span></li>
+<li>Components: <span class="math inline">\(R^i_{jkl} = \langle dx^i,
+R(\partial_k,\partial_l)\partial_j\rangle\)</span></li>
+<li>Sectional curvature <span class="math inline">\(K(\sigma) =
+\frac{\langle R(X,Y)Y, X\rangle}{g(X,X)g(Y,Y) - g(X,Y)^2}\)</span></li>
+</ul>
+<h2 id="main-theorem">Main Theorem</h2>
+<p><strong>Gauss-Bonnet</strong>: For a compact orientable surface <span
+class="math inline">\(M^2\)</span>, <span class="math inline">\(\int_M
+K\, dA = 2\pi \chi(M)\)</span>, where <span
+class="math inline">\(\chi(M)\)</span> is the Euler characteristic.</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="黎曼几何">黎曼几何</h1>
+<h2 id="定义">定义</h2>
+<p>黎曼流形 <span class="math inline">\((M,g)\)</span> 是一个光滑流形,
+其上赋予黎曼度量 <span class="math inline">\(g_p: T_pM \times T_pM \to
+\mathbb{R}\)</span>, 即每个切空间上光滑变化的正定内积。</p>
+<h2 id="主要性质">主要性质</h2>
+<ul>
+<li>Levi-Civita 联络 <span class="math inline">\(\nabla\)</span>
+是唯一无挠且保持度量的仿射联络</li>
+<li>测地线满足 <span
+class="math inline">\(\nabla_{\dot{\gamma}}\dot{\gamma} =
+0\)</span></li>
+<li>黎曼曲率: <span class="math inline">\(R(X,Y)Z = \nabla_X\nabla_Y Z -
+\nabla_Y\nabla_X Z - \nabla_{[X,Y]}Z\)</span></li>
+<li>分量: <span class="math inline">\(R^i_{jkl} = \langle dx^i,
+R(\partial_k,\partial_l)\partial_j\rangle\)</span></li>
+<li>截面曲率 <span class="math inline">\(K(\sigma) = \frac{\langle
+R(X,Y)Y, X\rangle}{g(X,X)g(Y,Y) - g(X,Y)^2}\)</span></li>
+</ul>
+<h2 id="主要定理">主要定理</h2>
+<p><strong>Gauss-Bonnet 定理</strong>: 对于紧致定向曲面 <span
+class="math inline">\(M^2\)</span>, 有 <span
+class="math inline">\(\int_M K\, dA = 2\pi \chi(M)\)</span>, 其中 <span
+class="math inline">\(\chi(M)\)</span> 为欧拉示性数。</p>
+</body>
+</html>
