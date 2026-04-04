@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>denmi</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="complex-geometry">Complex Geometry</h1>
+<h2 id="definition">Definition</h2>
+<p>A complex manifold is a smooth even-dimensional manifold <span
+class="math inline">\(M^{2n}\)</span> equipped with an integrable almost
+complex structure <span class="math inline">\(J: TM \to TM\)</span>
+satisfying <span class="math inline">\(J^2 = -\mathrm{id}\)</span>,
+giving local holomorphic coordinates <span class="math inline">\((z_1,
+\dots, z_n)\)</span>. ## Key Properties - Every complex manifold carries
+a canonical orientation - Complex analytic functions are <span
+class="math inline">\(J\)</span>-invariant - The tangent space splits as
+<span class="math inline">\(TM \otimes_{\mathbb{R}} \mathbb{C} = T^{1,0}
+\oplus T^{0,1}\)</span> - Integrable <span
+class="math inline">\(J\)</span> is equivalent to the vanishing of the
+Nijenhuis tensor</p>
+<h2 id="main-theorem">Main Theorem</h2>
+<p><strong>Hodge Decomposition</strong> (1938): On a compact Kähler
+manifold <span class="math inline">\(M\)</span>, cohomology decomposes
+as <span class="math inline">\(H^k(M, \mathbb{C}) = \bigoplus_{p+q=k}
+H^{p,q}\)</span>, with <span class="math inline">\(H^{p,q} \cong
+\overline{H^{q,p}}\)</span>. Moreover, <span
+class="math inline">\(\partial\bar\partial\)</span>-lemma holds: closed
+forms in the right bidegree are exact. <span
+class="math display">\[\text{Hodge: } H^k(M, \mathbb{C}) \cong
+\bigoplus_{p+q=k} H^{p,q}\]</span></p>
+</body>
+</html>
